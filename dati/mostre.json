@@ -1,0 +1,98 @@
+{
+  "aggiornato": "2026-11-06T21:30:00Z",
+  "totale": 9,
+  "mostre": [
+    {
+      "galleria": "Massimo De Carlo",
+      "id": "massimodecarlo",
+      "titolo": "The Trace of Things",
+      "immagine": "https://mdc-space.fra1.cdn.digitaloceanspaces.com/prod/B9M4478-seo.jpg",
+      "link": "https://massimodecarlo.com/exhibitions/the-trace-of-things",
+      "dal": "2026-10-15",
+      "al": "2026-11-18",
+      "sito": "https://massimodecarlo.com"
+    },
+    {
+      "galleria": "Gió Marconi",
+      "id": "giomarconi",
+      "titolo": "Song of the Sirens",
+      "immagine": "https://giomarconi.com/content/photos/gio-marconi-2026-10-08-14-47-57-089600.jpg",
+      "link": "https://giomarconi.com/en/exhibition/song-of-the-sirens",
+      "dal": "2026-10-01",
+      "al": "2026-12-19",
+      "sito": "https://giomarconi.com"
+    },
+    {
+      "galleria": "Galleria Raffaella Cortese",
+      "id": "raffaellacortese",
+      "titolo": "Metamorfosi",
+      "immagine": "https://assets.raffaellacortese.com/upload/f_jpg,q_auto,w_1200/v1790417239/LM_VIEWS_01_kodhgh.jpg",
+      "link": "https://raffaellacortese.com/exhibition/2026/metamorfosi",
+      "dal": "2026-09-24",
+      "al": "2026-12-23",
+      "sito": "https://raffaellacortese.com"
+    },
+    {
+      "galleria": "Thaddaeus Ropac",
+      "id": "ropac",
+      "titolo": "Leoncillo — Perché più bruci",
+      "immagine": "https://static-assets.artlogic.net/w_1000,c_limit,f_auto,fl_lossy,q_auto:good/ws-ropac/usr/images/viewing_rooms/main_image_override/items/e6/e61bf6972d0b4096a910cb411f3ce1b9/_b9m1395.jpg",
+      "link": "https://ropac.net/exhibitions/800-leoncillo-perche-piu-bruci/",
+      "dal": "2026-09-16",
+      "al": "2026-11-14",
+      "sito": "https://ropac.net"
+    },
+    {
+      "galleria": "Monica De Cardenas",
+      "id": "monicadecardenas",
+      "titolo": "Uwe Wittwer — Controcorrente",
+      "immagine": "https://monicadecardenas.com/wp-content/uploads/2026/09/MDC_1.jpg",
+      "link": "https://monicadecardenas.com/uwe-wittwer-controcorrente/",
+      "dal": "2026-09-24",
+      "al": "2027-01-09",
+      "sito": "https://monicadecardenas.com"
+    },
+    {
+      "galleria": "Lia Rumma",
+      "id": "liarumma",
+      "titolo": "Ettore Spalletti",
+      "immagine": "https://admin.liarumma.it/wp-content/uploads/2026/10/unnamed-aspect-ratio-644x430-aspect-ratio-1510x960.jpg",
+      "link": "https://www.liarumma.it/mostre/ettore-spalletti-2",
+      "dal": "2026-11-05",
+      "al": null,
+      "sito": "https://www.liarumma.it"
+    },
+    {
+      "galleria": "Cardi Gallery",
+      "id": "cardi",
+      "titolo": "Bosco Sodi — Fruto del Bosco",
+      "immagine": "https://cardigallery.com/wp-content/uploads/Bosco-Fruto-edits-2.png",
+      "link": "https://cardigallery.com/exhibitions/bosco-sodi-2/",
+      "dal": "2026-09-21",
+      "al": "2026-11-14",
+      "sito": "https://cardigallery.com"
+    },
+    {
+      "galleria": "Christian Stein",
+      "id": "christianstein",
+      "titolo": "Giulio Paolini — In studio (ora come allora)",
+      "immagine": "https://static.wixstatic.com/media/6c3429_78facca2e618442a95e7b40bdbf91dd6~mv2.jpg/v1/fit/w_997,h_565,q_90,quality_auto/6c3429_78facca2e618442a95e7b40bdbf91dd6~mv2.jpg",
+      "link": "https://www.galleriachristianstein.it/giulio-paolini-2026",
+      "dal": null,
+      "al": null,
+      "sito": "https://www.galleriachristianstein.it"
+    },
+    {
+      "galleria": "Gió Marconi",
+      "id": "giomarconi",
+      "titolo": "Gianni Colombo — Vocale con accento",
+      "immagine": "https://giomarconi.com/content/exhibitions/gio-marconi-2026-11-04-14-50-50-299500.jpg",
+      "link": "https://giomarconi.com/en/exhibition/vocale-con-accento",
+      "dal": "2026-11-06",
+      "al": "2027-02-27",
+      "sito": "https://giomarconi.com"
+    }
+  ],
+  "rapporto": [],
+  "_nota": "Dati iniziali raccolti a mano e verificati il 6 novembre 2026; dal primo giro automatico questo file viene riscritto."
+}

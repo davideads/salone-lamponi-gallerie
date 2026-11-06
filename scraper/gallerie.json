@@ -1,0 +1,188 @@
+{
+  "_come_funziona": "Una voce per galleria. 'pagina' = pagina dove la galleria elenca le mostre; 'link' = forma degli indirizzi delle singole mostre (espressione regolare). Il lettore apre le schede, legge titolo, immagine e date e tiene solo le mostre in corso a Milano. Le altre opzioni servono a casi particolari: vedi LEGGIMI.md.",
+  "gallerie": [
+    {
+      "id": "massimodecarlo",
+      "nome": "Massimo De Carlo",
+      "sito": "https://massimodecarlo.com",
+      "pagina": "https://massimodecarlo.com/galleries/milano",
+      "link": "/exhibitions/[^/?]+$"
+    },
+    {
+      "id": "liarumma",
+      "nome": "Lia Rumma",
+      "sito": "https://www.liarumma.it",
+      "pagina": "https://www.liarumma.it/mostre",
+      "link": "/mostre/[^/?]+$",
+      "altreCitta": "Napoli|Z(u|ü)rich|Venezia|Pescara|Kunsthaus",
+      "soloMilano": true
+    },
+    {
+      "id": "giomarconi",
+      "nome": "Gió Marconi",
+      "sito": "https://giomarconi.com",
+      "pagina": "https://giomarconi.com/en/exhibitions/current",
+      "link": "/en/exhibition/[^/]+$",
+      "preferisciFoto": true,
+      "immagineDa": [
+        "_lqip",
+        ""
+      ]
+    },
+    {
+      "id": "kaufmannrepetto",
+      "nome": "kaufmann repetto",
+      "sito": "https://kaufmannrepetto.com",
+      "pagina": "https://kaufmannrepetto.com/",
+      "link": "/exhibition/[^/]+/?$",
+      "altreCitta": "New York",
+      "_nota": "Il sito blocca i programmi automatici con una pagina di verifica: se il lettore non riesce, usa manuali.json."
+    },
+    {
+      "id": "raffaellacortese",
+      "nome": "Galleria Raffaella Cortese",
+      "sito": "https://raffaellacortese.com",
+      "pagina": "https://raffaellacortese.com/exhibitions",
+      "link": "/exhibition/\\d{4}/[^/]+",
+      "preferisciFoto": true,
+      "immagineDa": [
+        "w_\\d+",
+        "w_1200"
+      ]
+    },
+    {
+      "id": "clima",
+      "nome": "Clima",
+      "sito": "https://www.climagallery.com",
+      "pagina": "https://www.climagallery.com/exhibitions/",
+      "link": "/exhibition/[^/]+/?$",
+      "escludi": "milano-drawing-week|miart|artissima|paris-internationale"
+    },
+    {
+      "id": "christianstein",
+      "nome": "Christian Stein",
+      "sito": "https://www.galleriachristianstein.it",
+      "pagina": "https://www.galleriachristianstein.it/",
+      "link": "galleriachristianstein\\.it/[a-z0-9-]+$",
+      "testoLink": "^exhibition$",
+      "tutteInCorso": true,
+      "dataSingola": false,
+      "titoloDaElenco": true,
+      "immagineDa": [
+        "enc_avif,",
+        ""
+      ]
+    },
+    {
+      "id": "monicadecardenas",
+      "nome": "Monica De Cardenas",
+      "sito": "https://monicadecardenas.com",
+      "pagina": "https://monicadecardenas.com/exhibitions/",
+      "link": "monicadecardenas\\.com/[a-z0-9-]{4,}/?$",
+      "escludi": "/(exhibitions|current|upcoming|newsletter|news\\d?|locations|milano|zuoz|lugano|artists?|contact|about|publications|fairs|privacy[^/]*|[^/]*test[^/]*)/?$",
+      "soloDateElenco": true,
+      "cittaInElenco": true,
+      "immagineDa": [
+        "-uai-\\d+x\\d+",
+        ""
+      ]
+    },
+    {
+      "id": "cardi",
+      "nome": "Cardi Gallery",
+      "sito": "https://cardigallery.com",
+      "pagina": "https://cardigallery.com/exhibitions/",
+      "link": "/exhibitions?/[^/?]{4,}/?$",
+      "escludi": "art-basel|frieze|miart|tefaf|fair",
+      "altreCitta": "London|Londra"
+    },
+    {
+      "id": "ropac",
+      "nome": "Thaddaeus Ropac",
+      "sito": "https://ropac.net",
+      "pagina": "https://ropac.net/exhibitions/all/current/",
+      "link": "/exhibitions/\\d+-[^/]+/?$",
+      "cittaInElenco": true,
+      "immagineDa": [
+        "w_1200,h_630,c_fill",
+        "w_1000,c_limit"
+      ]
+    },
+    {
+      "id": "federicovavassori",
+      "nome": "Federico Vavassori",
+      "sito": "https://www.federicovavassori.com",
+      "pagina": "https://www.federicovavassori.com/exhibitions",
+      "link": "/exhibitions/[^/]+$"
+    },
+    {
+      "id": "prometeo",
+      "nome": "Prometeo Gallery Ida Pisani",
+      "sito": "https://www.prometeogallery.com",
+      "pagina": "https://www.prometeogallery.com/it/mostre",
+      "link": "/it/mostra/[^/]+$",
+      "altreCitta": "Lucca"
+    },
+    {
+      "id": "tommasocalabro",
+      "nome": "Tommaso Calabro",
+      "sito": "https://www.tommasocalabro.com",
+      "pagina": "https://www.tommasocalabro.com/mostre/location:1",
+      "link": "/mostre/[^/:]+$",
+      "altreCitta": "Venezia|Feltre"
+    },
+    {
+      "id": "ciaccialevi",
+      "nome": "Ciaccia Levi",
+      "sito": "https://www.ciaccialevi.com",
+      "pagina": "https://www.ciaccialevi.com/exhibitions",
+      "link": "/exhibitions/[^/]+$",
+      "altreCitta": "Paris|Parigi"
+    },
+    {
+      "id": "mimmoscognamiglio",
+      "nome": "Mimmo Scognamiglio",
+      "sito": "https://mimmoscognamiglio.com",
+      "pagina": "https://mimmoscognamiglio.com/exhibitions/",
+      "link": "/exhibitions/\\d+-[^/]+/(overview/)?$"
+    },
+    {
+      "id": "zero",
+      "nome": "ZERO…",
+      "sito": "https://galleriazero.it",
+      "pagina": "https://galleriazero.it/",
+      "link": "galleriazero\\.it/works/[^/]+/?$",
+      "maxSchede": 4
+    },
+    {
+      "id": "loom",
+      "nome": "Loom Gallery",
+      "sito": "https://loomgallery.com",
+      "pagina": "https://loomgallery.com/exhibition",
+      "link": "/exhibition/[^/]+/?$",
+      "escludi": "miart|artissima|drawing-week|art-basel|fair"
+    },
+    {
+      "id": "francescaminini",
+      "nome": "Francesca Minini",
+      "sito": "https://www.francescaminini.it",
+      "pagina": "https://www.francescaminini.it/",
+      "_nota": "da verificare: struttura del sito non ancora collaudata"
+    },
+    {
+      "id": "renatafabbri",
+      "nome": "Renata Fabbri",
+      "sito": "https://www.renatafabbri.it",
+      "pagina": "https://www.renatafabbri.it/",
+      "_nota": "da verificare: struttura del sito non ancora collaudata"
+    },
+    {
+      "id": "aarteinvernizzi",
+      "nome": "A arte Invernizzi",
+      "sito": "https://www.aarteinvernizzi.it",
+      "pagina": "https://www.aarteinvernizzi.it/it/it/esposizioni",
+      "link": "/it/it/esposizioni/[^/]+$",
+      "_nota": "da verificare"
+    }
+  ]
+}

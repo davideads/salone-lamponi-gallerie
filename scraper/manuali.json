@@ -1,0 +1,12 @@
+{
+  "_come_funziona": "Mostre da aggiungere a mano (per le gallerie che il lettore non riesce a leggere). Copia l'esempio dentro 'mostre', cambia i valori e togli il trattino basso da '_esempio'. Ogni mostra sparisce da sola dopo la data 'al'.",
+  "_esempio": {
+    "galleria": "Nome galleria",
+    "titolo": "Titolo della mostra",
+    "immagine": "https://indirizzo-immagine.jpg",
+    "link": "https://pagina-della-mostra",
+    "dal": "2026-11-10",
+    "al": "2027-01-15"
+  },
+  "mostre": []
+}

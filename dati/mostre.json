@@ -1,7 +1,17 @@
 {
-  "aggiornato": "2026-11-06T21:30:00Z",
+  "aggiornato": "2026-11-06T22:03:20.733Z",
   "totale": 9,
   "mostre": [
+    {
+      "galleria": "Lia Rumma",
+      "id": "liarumma",
+      "titolo": "ETTORE SPALLETTI",
+      "immagine": "https://admin.liarumma.it/wp-content/uploads/2026/10/unnamed-aspect-ratio-644x430-aspect-ratio-1510x960.jpg",
+      "link": "https://www.liarumma.it/mostre/ettore-spalletti-2",
+      "dal": "2026-11-05",
+      "al": null,
+      "sito": "https://www.liarumma.it"
+    },
     {
       "galleria": "Massimo De Carlo",
       "id": "massimodecarlo",
@@ -33,6 +43,26 @@
       "sito": "https://raffaellacortese.com"
     },
     {
+      "galleria": "Monica De Cardenas",
+      "id": "monicadecardenas",
+      "titolo": "UWE WITTWER Controcorrente",
+      "immagine": "https://monicadecardenas.com/wp-content/uploads/2026/09/MDC_1.jpg",
+      "link": "https://monicadecardenas.com/uwe-wittwer-controcorrente/",
+      "dal": "2026-09-24",
+      "al": "2027-01-09",
+      "sito": "https://monicadecardenas.com"
+    },
+    {
+      "galleria": "Cardi Gallery",
+      "id": "cardi",
+      "titolo": "Bosco Sodi",
+      "immagine": "https://cardigallery.com/wp-content/uploads/Bosco-Fruto-edits-2.png",
+      "link": "https://cardigallery.com/exhibitions/bosco-sodi-2/",
+      "dal": "2026-09-21",
+      "al": "2026-11-14",
+      "sito": "https://cardigallery.com"
+    },
+    {
       "galleria": "Thaddaeus Ropac",
       "id": "ropac",
       "titolo": "Leoncillo — Perché più bruci",
@@ -43,39 +73,9 @@
       "sito": "https://ropac.net"
     },
     {
-      "galleria": "Monica De Cardenas",
-      "id": "monicadecardenas",
-      "titolo": "Uwe Wittwer — Controcorrente",
-      "immagine": "https://monicadecardenas.com/wp-content/uploads/2026/09/MDC_1.jpg",
-      "link": "https://monicadecardenas.com/uwe-wittwer-controcorrente/",
-      "dal": "2026-09-24",
-      "al": "2027-01-09",
-      "sito": "https://monicadecardenas.com"
-    },
-    {
-      "galleria": "Lia Rumma",
-      "id": "liarumma",
-      "titolo": "Ettore Spalletti",
-      "immagine": "https://admin.liarumma.it/wp-content/uploads/2026/10/unnamed-aspect-ratio-644x430-aspect-ratio-1510x960.jpg",
-      "link": "https://www.liarumma.it/mostre/ettore-spalletti-2",
-      "dal": "2026-11-05",
-      "al": null,
-      "sito": "https://www.liarumma.it"
-    },
-    {
-      "galleria": "Cardi Gallery",
-      "id": "cardi",
-      "titolo": "Bosco Sodi — Fruto del Bosco",
-      "immagine": "https://cardigallery.com/wp-content/uploads/Bosco-Fruto-edits-2.png",
-      "link": "https://cardigallery.com/exhibitions/bosco-sodi-2/",
-      "dal": "2026-09-21",
-      "al": "2026-11-14",
-      "sito": "https://cardigallery.com"
-    },
-    {
       "galleria": "Christian Stein",
       "id": "christianstein",
-      "titolo": "Giulio Paolini — In studio (ora come allora)",
+      "titolo": "GIULIO PAOLINI — IN STUDIO (ORA COME ALLORA)",
       "immagine": "https://static.wixstatic.com/media/6c3429_78facca2e618442a95e7b40bdbf91dd6~mv2.jpg/v1/fit/w_997,h_565,q_90,quality_auto/6c3429_78facca2e618442a95e7b40bdbf91dd6~mv2.jpg",
       "link": "https://www.galleriachristianstein.it/giulio-paolini-2026",
       "dal": null,
@@ -85,7 +85,7 @@
     {
       "galleria": "Gió Marconi",
       "id": "giomarconi",
-      "titolo": "Gianni Colombo — Vocale con accento",
+      "titolo": "Vocale con accento",
       "immagine": "https://giomarconi.com/content/exhibitions/gio-marconi-2026-11-04-14-50-50-299500.jpg",
       "link": "https://giomarconi.com/en/exhibition/vocale-con-accento",
       "dal": "2026-11-06",
@@ -93,6 +93,184 @@
       "sito": "https://giomarconi.com"
     }
   ],
-  "rapporto": [],
-  "_nota": "Dati iniziali raccolti a mano e verificati il 6 novembre 2026; dal primo giro automatico questo file viene riscritto."
+  "rapporto": [
+    {
+      "galleria": "A arte Invernizzi",
+      "esito": "errore",
+      "mostre": 0,
+      "note": [
+        "HTTP 404"
+      ]
+    },
+    {
+      "galleria": "Cardi Gallery",
+      "esito": "ok",
+      "mostre": 1,
+      "note": [
+        "link trovati: 179",
+        "schede lette: 1, mostre in corso: 1"
+      ]
+    },
+    {
+      "galleria": "Christian Stein",
+      "esito": "ok",
+      "mostre": 1,
+      "note": [
+        "link trovati: 1",
+        "schede lette: 1, mostre in corso: 1"
+      ]
+    },
+    {
+      "galleria": "Ciaccia Levi",
+      "esito": "ok",
+      "mostre": 0,
+      "note": [
+        "link trovati: 1",
+        "scartata (non a Milano): https://www.ciaccialevi.com/exhibitions/fast-asleep-in-a-room-somewhere",
+        "schede lette: 1, mostre in corso: 0"
+      ]
+    },
+    {
+      "galleria": "Clima",
+      "esito": "ok",
+      "mostre": 0,
+      "note": [
+        "link trovati: 51",
+        "schede lette: 0, mostre in corso: 0"
+      ]
+    },
+    {
+      "galleria": "Federico Vavassori",
+      "esito": "ok",
+      "mostre": 0,
+      "note": [
+        "link trovati: 72",
+        "schede lette: 2, mostre in corso: 0"
+      ]
+    },
+    {
+      "galleria": "Francesca Minini",
+      "esito": "ok",
+      "mostre": 0,
+      "note": [
+        "link trovati: 1",
+        "schede lette: 1, mostre in corso: 0"
+      ]
+    },
+    {
+      "galleria": "Galleria Raffaella Cortese",
+      "esito": "ok",
+      "mostre": 1,
+      "note": [
+        "link trovati: 1",
+        "schede lette: 1, mostre in corso: 1"
+      ]
+    },
+    {
+      "galleria": "Gió Marconi",
+      "esito": "ok",
+      "mostre": 2,
+      "note": [
+        "link trovati: 128",
+        "schede lette: 2, mostre in corso: 2"
+      ]
+    },
+    {
+      "galleria": "kaufmann repetto",
+      "esito": "errore",
+      "mostre": 0,
+      "note": [
+        "pagina di verifica anti-robot"
+      ]
+    },
+    {
+      "galleria": "Lia Rumma",
+      "esito": "ok",
+      "mostre": 1,
+      "note": [
+        "link trovati: 22",
+        "schede lette: 10, mostre in corso: 1"
+      ]
+    },
+    {
+      "galleria": "Loom Gallery",
+      "esito": "ok",
+      "mostre": 0,
+      "note": [
+        "link trovati: 32",
+        "schede lette: 0, mostre in corso: 0"
+      ]
+    },
+    {
+      "galleria": "Massimo De Carlo",
+      "esito": "ok",
+      "mostre": 1,
+      "note": [
+        "link trovati: 1",
+        "schede lette: 1, mostre in corso: 1"
+      ]
+    },
+    {
+      "galleria": "Mimmo Scognamiglio",
+      "esito": "ok",
+      "mostre": 0,
+      "note": [
+        "link trovati: 39",
+        "schede lette: 0, mostre in corso: 0"
+      ]
+    },
+    {
+      "galleria": "Monica De Cardenas",
+      "esito": "ok",
+      "mostre": 1,
+      "note": [
+        "link trovati: 12",
+        "schede lette: 1, mostre in corso: 1"
+      ]
+    },
+    {
+      "galleria": "Prometeo Gallery Ida Pisani",
+      "esito": "ok",
+      "mostre": 0,
+      "note": [
+        "link trovati: 129",
+        "schede lette: 10, mostre in corso: 0"
+      ]
+    },
+    {
+      "galleria": "Renata Fabbri",
+      "esito": "errore",
+      "mostre": 0,
+      "note": [
+        "link trovati: 0",
+        "schede lette: 0, mostre in corso: 0",
+        "nessun link trovato nella pagina elenco"
+      ]
+    },
+    {
+      "galleria": "Thaddaeus Ropac",
+      "esito": "ok",
+      "mostre": 1,
+      "note": [
+        "link trovati: 7",
+        "schede lette: 1, mostre in corso: 1"
+      ]
+    },
+    {
+      "galleria": "Tommaso Calabro",
+      "esito": "errore",
+      "mostre": 0,
+      "note": [
+        "fetch failed"
+      ]
+    },
+    {
+      "galleria": "ZERO…",
+      "esito": "errore",
+      "mostre": 0,
+      "note": [
+        "fetch failed"
+      ]
+    }
+  ]
 }

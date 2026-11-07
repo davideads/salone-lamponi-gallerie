@@ -296,7 +296,7 @@
       "link": "galleriadellachiusa\\.it/(mostre/)?[a-z0-9-]{8,}/?$",
       "escludi": "/(autori-in-galleria|eventi-speciali|galleria-della-chiusa)",
       "maxSchede": 6
-     },
+    },
     {
       "id": "gracis",
       "nome": "Galleria Gracis",
@@ -304,6 +304,157 @@
       "pagina": "https://www.galleriagracis.com/it/mostre/",
       "link": "/it/mostre/[^/#]+/?$",
       "maxSchede": 4
+    },
+    {
+      "id": "fondazioneprada",
+      "nome": "Fondazione Prada",
+      "sito": "https://www.fondazioneprada.org",
+      "pagina": "https://www.fondazioneprada.org/",
+      "link": "/project/[^/]+/?$",
+      "richiedi": "\\bmostra\\b",
+      "cittaInElenco": true
+    },
+    {
+      "id": "hangarbicocca",
+      "nome": "Pirelli HangarBicocca",
+      "sito": "https://pirellihangarbicocca.org",
+      "pagina": "https://pirellihangarbicocca.org/exhibitions/in-corso/",
+      "link": "/mostra/[^/]+/?$",
+      "escludi": "el-seed",
+      "dataSingola": false
+    },
+    {
+      "id": "trussardi",
+      "nome": "Fondazione Nicola Trussardi",
+      "sito": "https://www.fondazionenicolatrussardi.com",
+      "pagina": "https://www.fondazionenicolatrussardi.com/mostre/",
+      "link": "/mostre/[^/]+/?$",
+      "maxSchede": 4
+    },
+    {
+      "id": "cassinaprojects",
+      "nome": "Cassina Projects",
+      "sito": "https://www.cassinaprojects.com",
+      "pagina": "https://www.cassinaprojects.com/cassina-projects/exhibitions/",
+      "link": "/exhibitions/\\d+-[^/]+/(overview/)?$"
+    },
+    {
+      "id": "canepaneri",
+      "nome": "C+N Gallery Canepaneri",
+      "sito": "https://www.canepaneri.com",
+      "pagina": "https://www.canepaneri.com/it/index.html",
+      "link": "EventiLeggi\\.asp\\?pid=1&EventiID=\\d+",
+      "altreCitta": "Genova",
+      "_nota": "ha anche una sede a Genova: verificare che le mostre siano quelle di Milano"
+    },
+    {
+      "id": "osart",
+      "nome": "Osart Gallery",
+      "sito": "https://www.osartgallery.com",
+      "pagina": "https://www.osartgallery.com/mostre",
+      "link": "osartgallery\\.com/[a-z0-9-]{5,}$",
+      "escludi": "/(la-galleria|artisti|mostre|fiere|blog|contatti)$",
+      "maxSchede": 3
+    },
+    {
+      "id": "patriciaarmocida",
+      "nome": "Galleria Patricia Armocida",
+      "sito": "https://www.galleriapatriciaarmocida.com",
+      "pagina": "https://www.galleriapatriciaarmocida.com/it/esposizioni",
+      "link": "/it/esposizioni/[^/]+$",
+      "maxSchede": 4
+    },
+    {
+      "id": "martinasimeti",
+      "nome": "Martina Simeti",
+      "sito": "https://martinasimeti.com",
+      "pagina": "https://martinasimeti.com/exhibitions",
+      "link": "/exhibitions/[^/]+$",
+      "escludi": "night-day-for-night"
+    },
+    {
+      "id": "10amart",
+      "nome": "10 A.M. ART",
+      "sito": "https://www.10amart.it",
+      "pagina": "https://www.10amart.it/exhibitions",
+      "link": "10amart\\.it/[a-z0-9-]{6,}$",
+      "escludi": "/(artists|exhibitions|viewing-room|art-fairs|publications|news|special-projects|thegallery|contacts)$",
+      "soloDateElenco": true
+    },
+    {
+      "id": "viasaterna",
+      "nome": "Viasaterna",
+      "sito": "https://viasaterna.com",
+      "pagina": "https://viasaterna.com/",
+      "link": "viasaterna\\.com/[A-Z][A-Za-z0-9-]+$",
+      "escludi": "/(Menu|Contacts|Museo-[^/]*)$",
+      "soloPrima": true,
+      "tutteInCorso": true,
+      "dataSingola": false,
+      "_nota": "il sito non mostra le date: viene presa la mostra in primo piano nella home"
+    },
+    {
+      "id": "marcorossi",
+      "nome": "Marcorossi artecontemporanea",
+      "sito": "https://www.marcorossiartecontemporanea.com",
+      "pagina": "https://www.marcorossiartecontemporanea.com/mostre/",
+      "link": "marcorossiartecontemporanea\\.com/[a-z0-9-]{8,}/?$",
+      "escludi": "/(about-us|gallerie|sezione-riservata-architetti|mostre|artisti|news|contatti|privacy-policy|cookie-policy)/?$",
+      "cittaInElenco": true
+    },
+    {
+      "id": "poggiali",
+      "nome": "Galleria Poggiali",
+      "sito": "https://www.galleriapoggiali.com",
+      "pagina": "https://www.galleriapoggiali.com/en/milan-exhibitions",
+      "link": "/en/milan-exhibition/[^/]+$"
+    },
+    {
+      "id": "ribot",
+      "nome": "Ribot",
+      "sito": "https://www.ribotgallery.com",
+      "pagina": "https://www.ribotgallery.com/category/exhibitions-en/",
+      "link": "ribotgallery\\.com/[a-z0-9-]{4,}/?$",
+      "escludi": "/(category|artists?|publications|special-projects|contact|about|it|en)(/|$)"
+    },
+    {
+      "id": "depart",
+      "nome": "Dep Art Gallery",
+      "sito": "https://www.depart.it",
+      "pagina": "https://www.depart.it/it/mostre.htm",
+      "link": "/it/mostra-di-[^/]+\\.htm$"
+    },
+    {
+      "id": "fondazionemarconi",
+      "nome": "Fondazione Marconi",
+      "sito": "https://www.fondazionemarconi.org",
+      "pagina": "https://www.fondazionemarconi.org/it/exhibitions/current",
+      "link": "/it/exhibition/[^/]+$",
+      "preferisciFoto": true,
+      "immagineDa": [
+        "_lqip",
+        ""
+      ]
+    },
+    {
+      "id": "mudima",
+      "nome": "Fondazione Mudima",
+      "sito": "https://www.mudima.net",
+      "pagina": "https://www.mudima.net/archivio-mostre/",
+      "link": "/portfolio-items/[^/]+/",
+      "soloPrima": true,
+      "tutteInCorso": true,
+      "dataSingola": false,
+      "_nota": "il sito non mostra le date: viene presa la mostra più recente"
+    },
+    {
+      "id": "sozzani",
+      "nome": "Fondazione Sozzani",
+      "sito": "https://fondazionesozzani.org",
+      "pagina": "https://fondazionesozzani.org/it/mostre-in-corso/",
+      "link": "/it/mostre/\\d{4}/\\d{2}/[^/]+/?$",
+      "altreCitta": "Beijing|Pechino|Berlino|Berlin|Como|Le Locle|Madrid|Napoli|New York|Parigi|Paris|Parma|Seoul|Shanghai",
+      "_nota": "da verificare: parte dell'elenco si carica con JavaScript"
     }
   ]
 }

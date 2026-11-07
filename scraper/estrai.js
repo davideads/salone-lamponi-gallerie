@@ -145,7 +145,7 @@
       if (conf.__ok && !conf.__ok.has(h)) continue;
       const t = testoDi(a);
       const prec = visti.get(h);
-      if (!prec) visti.set(h, { url: h, testo: t, testi: t ? [t] : [], contesto: contesto(a), img: immagineVicina(a, base) });
+      if (!prec) visti.set(h, { url: h, testo: t, testi: t ? [t] : [], contesto: contesto(a, re, base), img: immagineVicina(a, base) });
       else { if (t.length > prec.testo.length) prec.testo = t; if (t && !prec.testi.includes(t)) prec.testi.push(t); if (!prec.img) prec.img = immagineVicina(a, base); }
     }
     return [...visti.values()];
@@ -163,14 +163,23 @@
   }
 
   // testo del "riquadro" che contiene il link (per leggere le date scritte accanto)
-  function contesto(a) {
-    let n = a;
+  function contesto(a, re, base) {
+    const mio = assoluto(a.getAttribute('href'), base);
+    let n = a, ultimo = testoDi(a);
     for (let i = 0; i < 4 && n.parentElement; i++) {
       n = n.parentElement;
+      // se il riquadro contiene anche altre mostre, ci fermiamo: le loro date non sono di questa
+      if (re) {
+        const altri = new Set();
+        for (const x of n.querySelectorAll('a[href]')) { const h = assoluto(x.getAttribute('href'), base); if (h && h !== mio && re.test(h)) altri.add(h); }
+        if (altri.size) return ultimo;
+      }
       const t = testoDi(n);
-      if (t.length > 40) return t.length > 600 ? testoDi(a) : t;
+      if (t.length > 600) return ultimo;
+      ultimo = t;
+      if (t.length > 40) return t;
     }
-    return testoDi(a);
+    return ultimo;
   }
 
   // testo principale della pagina, senza intestazione, menu e piè di pagina
@@ -284,6 +293,7 @@
         if (r.al < iso(oggi)) { passateDiFila++; if (passateDiFila >= 6) break; }
         continue;
       }
+      if (conf.richiedi && !new RegExp(conf.richiedi, 'i').test(l.testo + ' ' + l.contesto)) continue; // es. solo "Mostra", non concerti o talk
       if (!r && conf.soloDateElenco) continue; // le schede senza date nell'elenco non sono mostre (es. pagine artista)
       if (conf.cittaInElenco && !RE_MILANO.test(l.testo + ' ' + l.contesto)) continue;
       if (schedeLette >= MAX_SCHEDE) break;

@@ -104,6 +104,9 @@
     const d = new P().parseFromString(html, 'text/html');
     d.__url = url;
     d.__html = html;
+    // alcune pagine dichiarano un <base href>: gli indirizzi relativi vanno risolti da lì
+    const b = d.querySelector && d.querySelector('base[href]');
+    try { d.__base = b ? new URL(b.getAttribute('href'), url).href : url; } catch (_) { d.__base = url; }
     return d;
   }
   const assoluto = (h, base) => { try { return new URL(h, base).href.split('#')[0]; } catch (_) { return null; } };
@@ -123,7 +126,7 @@
 
   /* link alle schede delle mostre presenti nella pagina elenco */
   function linkMostre(doc, conf) {
-    const base = doc.__url;
+    const base = doc.__base || doc.__url;
     const re = new RegExp(conf.link || '(exhibition|esibizion|mostr|show|esposizion)[^/]*/[^/?#]{3,}', 'i');
     const origine = new URL(base).origin.replace(/^https?:\/\/(www\.)?/, '');
     const visti = new Map();
@@ -212,7 +215,7 @@
   const NON_FOTO = /logo|icon|favicon|sprite|avatar|placeholder|blank|spacer|\.svg(\?|$)|\.gif(\?|$)|artist-pic|flag/i;
 
   function primaImmagine(doc, conf) {
-    const base = doc.__url;
+    const base = doc.__base || doc.__url;
     const c = (conf.immagineSel && doc.querySelector(conf.immagineSel)) || doc.querySelector('main, article, #content, .content') || doc.body;
     if (!c) return null;
     for (const img of c.querySelectorAll(conf.immagineSel ? 'img, source' : 'img')) {
@@ -246,7 +249,7 @@
     const titoloGrezzo = (conf.titoloSel && testoDi(doc.querySelector(conf.titoloSel))) ||
       meta(doc, ['og:title', 'twitter:title']) || spazi(doc.querySelector('h1')?.textContent) || spazi(doc.title);
     let immagine = meta(doc, ['og:image', 'og:image:url', 'twitter:image', 'twitter:image:src']);
-    if (immagine) immagine = assoluto(immagine, doc.__url);
+    if (immagine) immagine = assoluto(immagine, doc.__base || doc.__url);
     if (!immagine || NON_FOTO.test(immagine) || conf.preferisciFoto) immagine = primaImmagine(doc, conf) || immagine;
     if (conf.immagineRegex) { // immagine cercata nel codice della pagina (siti che le caricano con JavaScript)
       const m = new RegExp(conf.immagineRegex, 'i').exec(String(doc.__html || '').replace(/\\u002F/gi, '/'));
@@ -305,7 +308,8 @@
       if (!s.immagine && l.img) s.immagine = conf.immagineDa ? l.img.replace(new RegExp(conf.immagineDa[0]), conf.immagineDa[1]) : l.img;
       if (!s.titolo) { diario.push(`senza titolo: ${l.url}`); continue; }
       mostre.push({
-        galleria: conf.nome, id: conf.id, titolo: s.titolo, immagine: s.immagine || null, link: l.url,
+        // sempre https: la pagina del Salone scarta i collegamenti non sicuri
+        galleria: conf.nome, id: conf.id, titolo: s.titolo, immagine: s.immagine ? s.immagine.replace(/^http:/, 'https:') : null, link: l.url.replace(/^http:/, 'https:'),
         dal: r ? r.dal : null, al: r ? r.al : null,
       });
     }

@@ -152,7 +152,8 @@
       "sito": "https://galleriazero.it",
       "pagina": "https://galleriazero.it/",
       "link": "galleriazero\\.it/works/[^/]+/?$",
-      "maxSchede": 4
+      "soloPrima": true,
+      "dataMese": true
     },
     {
       "id": "loom",
@@ -166,66 +167,135 @@
       "id": "francescaminini",
       "nome": "Francesca Minini",
       "sito": "https://www.francescaminini.it",
-      "pagina": "https://www.francescaminini.it/",
-      "_nota": "da verificare: struttura del sito non ancora collaudata"
+      "pagina": "https://www.francescaminini.it/exhibitions/",
+      "link": "/exhibition/[^/]+/?$"
     },
     {
       "id": "renatafabbri",
       "nome": "Renata Fabbri",
       "sito": "https://www.renatafabbri.it",
       "pagina": "https://www.renatafabbri.it/",
-      "_nota": "da verificare: struttura del sito non ancora collaudata"
+      "_nota": "il sito carica l'elenco delle mostre con JavaScript: il lettore non lo vede. Usare manuali.json."
     },
     {
       "id": "aarteinvernizzi",
       "nome": "A arte Invernizzi",
       "sito": "https://www.aarteinvernizzi.it",
-      "pagina": "https://www.aarteinvernizzi.it/it/it/esposizioni",
-      "link": "/it/it/esposizioni/[^/]+$",
-      "_nota": "da verificare"
+      "pagina": "https://www.aarteinvernizzi.it/it/home",
+      "link": "aarteinvernizzi\\.it/it/esposizioni/[^/]+(/vedute)?$"
     },
-        { "id": "artnoble", "nome": "ArtNoble Gallery", "sito": "https://artnoble.it",
-      "pagina": "https://artnoble.it/exhibitions/", "link": "/exhibitions/[^/]+/?$", "altreCitta": "London|Londra" },
-
-    { "id": "building", "nome": "BUILDING", "sito": "https://building-gallery.com",
-            "pagina": "https://building-gallery.com/mostre/", "link": "/exhibitions/[^/]+/?$" },
-
-    { "id": "giovannibonelli", "nome": "Galleria Giovanni Bonelli", "sito": "https://www.galleriagiovannibonelli.com",
-      "pagina": "https://www.galleriagiovannibonelli.com/mostre/", "link": "/mostra/[^/]+/?$", "altreCitta": "Pietrasanta|Canneto" },
-
-    { "id": "fumagalli", "nome": "Galleria Fumagalli", "sito": "https://galleriafumagalli.com",
-      "pagina": "https://galleriafumagalli.com/mostre/", "link": "/mostre(-ongoing)?/[^/]+/?$" },
-
-    { "id": "scia", "nome": "Galleria Scia", "sito": "https://www.galleriascia.it",
-      "pagina": "https://www.galleriascia.it/", "_nota": "da verificare: il sito non si è aperto durante il controllo" },
-
-    { "id": "elpis", "nome": "Fondazione Elpis", "sito": "https://fondazioneelpis.org",
-            "pagina": "https://fondazioneelpis.org/", "link": "/exhibitions/[^/]+$", "altreCitta": "Palermo", "preferisciFoto": true},
-
-    { "id": "spazioserra", "nome": "spazioSERRA", "sito": "https://www.spazioserra.org",
-      "pagina": "https://www.spazioserra.org/exhibitions", "link": "/exhibitions/[^/]+$", "maxSchede": 3 },
-
-    { "id": "colombo", "nome": "Colombo's Gallery", "sito": "https://colomboarte.com",
-      "pagina": "https://colomboarte.com/mostre/", "link": "colomboarte\\.com/[a-z0-9-]{6,}/?$",
-      "escludi": "/(mostre|artisti|collaborazioni|cataloghi|la-galleria|contatti|informativa|negozio|shop|carrello|testimonial)/?$", "maxSchede": 6 },
-
-    { "id": "matria", "nome": "Galleria Matria", "sito": "https://www.galleriamatria.it",
-      "pagina": "https://www.galleriamatria.it/news-mostre-eventi/", "link": "galleriamatria\\.it/[a-z0-9-]*mostra[a-z0-9-]*/?$", "maxSchede": 5 },
-
-    { "id": "casadegliartisti", "nome": "Casa degli Artisti", "sito": "https://www.casadegliartisti.org",
-      "pagina": "https://www.casadegliartisti.org/categoria-progetto/mostre/", "link": "/progetto/[^/]+/?$", "maxSchede": 6 },
-
-    { "id": "m77", "nome": "M77 Gallery", "sito": "https://www.m77gallery.com",
-      "pagina": "https://www.m77gallery.com/our-exhibitions/", "link": "/exhibitions/[^/]+/?$" },
-
-    { "id": "anniwu", "nome": "Anni Wu", "sito": "https://anniwu.com",
-      "pagina": "https://anniwu.com/exhibitions/", "link": "/exhibition/[^/]+/?$" },
-
-    { "id": "icamilano", "nome": "ICA Milano", "sito": "https://www.icamilano.it",
-      "pagina": "https://www.icamilano.it/it/mostre", "link": "/it/mostre/[^/]+$" },
-
-    { "id": "dellachiusa", "nome": "Galleria della Chiusa", "sito": "https://www.galleriadellachiusa.it",
-      "pagina": "https://www.galleriadellachiusa.it/mostre/", "link": "galleriadellachiusa\\.it/(mostre/)?[a-z0-9-]{8,}/?$",
-      "escludi": "/(autori-in-galleria|eventi-speciali|galleria-della-chiusa)", "maxSchede": 6 }
+    {
+      "id": "artnoble",
+      "nome": "ArtNoble Gallery",
+      "sito": "https://artnoble.it",
+      "pagina": "https://artnoble.it/exhibitions/",
+      "link": "/exhibitions/[^/]+/?$",
+      "altreCitta": "London|Londra"
+    },
+    {
+      "id": "building",
+      "nome": "BUILDING",
+      "sito": "https://building-gallery.com",
+      "pagina": "https://building-gallery.com/",
+      "link": "/exhibitions/[^/]+/?$"
+    },
+    {
+      "id": "giovannibonelli",
+      "nome": "Galleria Giovanni Bonelli",
+      "sito": "https://www.galleriagiovannibonelli.com",
+      "pagina": "https://www.galleriagiovannibonelli.com/mostre/",
+      "link": "/mostra/[^/]+/?$",
+      "altreCitta": "Pietrasanta|Canneto"
+    },
+    {
+      "id": "fumagalli",
+      "nome": "Galleria Fumagalli",
+      "sito": "https://galleriafumagalli.com",
+      "pagina": "https://galleriafumagalli.com/mostre/",
+      "link": "/mostre(-ongoing)?/[^/]+/?$"
+    },
+    {
+      "id": "scia",
+      "nome": "Galleria Scia",
+      "sito": "https://www.galleriascia.it",
+      "pagina": "https://www.galleriascia.it/",
+      "_nota": "il sito non risponde (verificato anche dal browser): da riprovare più avanti"
+    },
+    {
+      "id": "elpis",
+      "nome": "Fondazione Elpis",
+      "sito": "https://fondazioneelpis.org",
+      "pagina": "https://fondazioneelpis.org/",
+      "link": "/exhibitions/[^/]+$",
+      "altreCitta": "Palermo",
+      "immagineRegex": "https://elpis-assets\\.fra1\\.cdn\\.digitaloceanspaces\\.com/_w1600/(?!assets/fe/)[^\"'\\s]+\\.(jpe?g|png|webp)"
+    },
+    {
+      "id": "spazioserra",
+      "nome": "spazioSERRA",
+      "sito": "https://www.spazioserra.org",
+      "pagina": "https://www.spazioserra.org/exhibitions",
+      "link": "/exhibitions/[^/]+$",
+      "soloPrima": true,
+      "tutteInCorso": true,
+      "dataSingola": false
+    },
+    {
+      "id": "colombo",
+      "nome": "Colombo's Gallery",
+      "sito": "https://colomboarte.com",
+      "pagina": "https://colomboarte.com/mostre/",
+      "link": "colomboarte\\.com/[a-z0-9-]{6,}/?$",
+      "escludi": "/(mostre|artisti|collaborazioni|cataloghi|la-galleria|contatti|informativa|negozio|shop|carrello|testimonial)/?$",
+      "maxSchede": 6
+    },
+    {
+      "id": "matria",
+      "nome": "Galleria Matria",
+      "sito": "https://www.galleriamatria.it",
+      "pagina": "https://www.galleriamatria.it/news-mostre-eventi/",
+      "link": "galleriamatria\\.it/[a-z0-9-]*mostra[a-z0-9-]*/?$",
+      "maxSchede": 5,
+      "_nota": "dal server di GitHub il sito non risponde (dal browser sì): se continua, usare manuali.json"
+    },
+    {
+      "id": "casadegliartisti",
+      "nome": "Casa degli Artisti",
+      "sito": "https://www.casadegliartisti.org",
+      "pagina": "https://www.casadegliartisti.org/categoria-progetto/mostre/",
+      "link": "/progetto/[^/]+/?$",
+      "maxSchede": 6
+    },
+    {
+      "id": "m77",
+      "nome": "M77 Gallery",
+      "sito": "https://www.m77gallery.com",
+      "pagina": "https://www.m77gallery.com/our-exhibitions/",
+      "link": "/exhibitions/[^/]+/?$",
+      "testoTutto": true
+    },
+    {
+      "id": "anniwu",
+      "nome": "Anni Wu",
+      "sito": "https://anniwu.com",
+      "pagina": "https://anniwu.com/exhibitions/",
+      "link": "/exhibition/[^/]+/?$"
+    },
+    {
+      "id": "icamilano",
+      "nome": "ICA Milano",
+      "sito": "https://www.icamilano.it",
+      "pagina": "https://www.icamilano.it/it/mostre",
+      "link": "/it/mostre/[^/]+$"
+    },
+    {
+      "id": "dellachiusa",
+      "nome": "Galleria della Chiusa",
+      "sito": "https://www.galleriadellachiusa.it",
+      "pagina": "https://www.galleriadellachiusa.it/mostre/",
+      "link": "galleriadellachiusa\\.it/(mostre/)?[a-z0-9-]{8,}/?$",
+      "escludi": "/(autori-in-galleria|eventi-speciali|galleria-della-chiusa)",
+      "maxSchede": 6
+    }
   ]
 }

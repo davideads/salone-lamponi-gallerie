@@ -26,10 +26,11 @@
     const out = [];
     const prendi = (re, f) => { let x; re.lastIndex = 0; while ((x = re.exec(testo))) { const r = f(x); if (r) out.push(Object.assign(r, { i: x.index, fine: x.index + x[0].length })); } };
     // 15.10.2026 · 15/10/2026 · 01.10. · 15-10-2026
-    prendi(/(?<![\d.])(\d{1,2})[.\/-](\d{1,2})(?:[.\/-](\d{4}|\d{2}(?![.\/-]\d)))?\.?(?![\d\/])/g, x => {
+    prendi(/(?<![\d.])(\d{1,2})[.\/-](\d{1,2})(?:[.\/-](\d{4}|\d{2}(?![.\/-]\d))|,\s*(\d{4}))?\.?(?![\d\/])/g, x => {
       const g = +x[1], m = +x[2]; if (g < 1 || g > 31 || m < 1 || m > 12) return null;
       // senza anno serve almeno il punto finale ("01.10.") per non confondere con altri numeri
       // senza anno: va bene "01.10." oppure "24.09 - 31.10.2026" (seguita da un'altra data)
+      if (x[4]) x[3] = x[4];
       if (!x[3] && !/\.$/.test(x[0]) && !/^\s*[–—-]\s*\d/.test(testo.slice(x.index + x[0].length))) return null;
       let a = x[3] ? +x[3] : null; if (a !== null && a < 100) a += 2000;
       return { g, m, a };
@@ -102,6 +103,7 @@
     const P = DOMParserImpl || root.DOMParser;
     const d = new P().parseFromString(html, 'text/html');
     d.__url = url;
+    d.__html = html;
     return d;
   }
   const assoluto = (h, base) => { try { return new URL(h, base).href.split('#')[0]; } catch (_) { return null; } };
@@ -122,7 +124,7 @@
   /* link alle schede delle mostre presenti nella pagina elenco */
   function linkMostre(doc, conf) {
     const base = doc.__url;
-    const re = new RegExp(conf.link || '(exhibition|mostr|show|esposizion)[^/]*/[^/?#]{3,}', 'i');
+    const re = new RegExp(conf.link || '(exhibition|esibizion|mostr|show|esposizion)[^/]*/[^/?#]{3,}', 'i');
     const origine = new URL(base).origin.replace(/^https?:\/\/(www\.)?/, '');
     const visti = new Map();
     const reTesto = conf.testoLink ? new RegExp(conf.testoLink, 'i') : null;
@@ -174,6 +176,13 @@
     if (!c) return '';
     const copia = c.cloneNode(true);
     copia.querySelectorAll('header, footer, nav, script, style, noscript, form, [class*=footer], [class*=cookie], [id*=footer], [id*=cookie]').forEach(n => n.remove());
+    return testoDi(copia);
+  }
+
+  function testoTuttaPagina(doc) {
+    if (!doc.body) return '';
+    const copia = doc.body.cloneNode(true);
+    copia.querySelectorAll('script, style, noscript, nav').forEach(n => n.remove());
     return testoDi(copia);
   }
 
@@ -239,8 +248,12 @@
     let immagine = meta(doc, ['og:image', 'og:image:url', 'twitter:image', 'twitter:image:src']);
     if (immagine) immagine = assoluto(immagine, doc.__url);
     if (!immagine || NON_FOTO.test(immagine) || conf.preferisciFoto) immagine = primaImmagine(doc, conf) || immagine;
+    if (conf.immagineRegex) { // immagine cercata nel codice della pagina (siti che le caricano con JavaScript)
+      const m = new RegExp(conf.immagineRegex, 'i').exec(String(doc.__html || '').replace(/\\u002F/gi, '/'));
+      if (m) immagine = m[0];
+    }
     if (immagine && conf.immagineDa) immagine = immagine.replace(new RegExp(conf.immagineDa[0]), conf.immagineDa[1]);
-    const testo = testoPrincipale(doc);
+    const testo = conf.testoTutto ? testoTuttaPagina(doc) : testoPrincipale(doc);
     return { titolo: pulisciTitolo(titoloGrezzo, conf.nome), immagine, testo };
   }
 
@@ -260,8 +273,10 @@
     const MAX_SCHEDE = conf.maxSchede || 10;
     const RE_MILANO = /\bmila(n|no)\b/i;
     const RE_ALTRE = conf.altreCitta ? new RegExp(conf.altreCitta, 'i') : null;
-    for (const l of links.slice(0, conf.max || 40)) {
-      let r = intervallo(l.testo, oggi) || intervallo(l.contesto, oggi);
+    for (const l of links.slice(0, conf.soloPrima ? 1 : (conf.max || 40))) {
+      let r = intervallo(l.testo, oggi) || intervallo(l.contesto, oggi) ||
+        intervallo(decodeURIComponent(l.url).replace(/[\/_]/g, ' '), oggi); // date scritte nell'indirizzo
+      if (!r && conf.dataMese) r = meseRecente(l.testo + ' ' + l.contesto, oggi);
       if (r && !inCorso(r, oggi)) {
         if (r.al < iso(oggi)) { passateDiFila++; if (passateDiFila >= 6) break; }
         continue;
@@ -298,6 +313,15 @@
     return { mostre, diario };
   }
 
-  const API = { leggiGalleria, inizioRecente, menzioni, intervallo, inCorso, documento, linkMostre, scheda, testoPrincipale, pulisciTitolo, iso };
+  /* Solo mese e anno (es. "October, 2026"): inizio al primo del mese, valido se recente. */
+  function meseRecente(testo, oggi, giorni) {
+    const m = new RegExp('(?<![a-zà-ü])(' + NOMI_MESI + ')\\.?,?\\s+(\\d{4})', 'i').exec(String(testo || ''));
+    if (!m) return null;
+    const t = new Date(Date.UTC(+m[2], MESI[m[1].toLowerCase()] - 1, 1));
+    const diff = ((oggi || new Date()) - t) / 864e5;
+    return diff >= 0 && diff <= (giorni || 75) ? { dal: iso(t), al: null } : null;
+  }
+
+  const API = { meseRecente, leggiGalleria, inizioRecente, menzioni, intervallo, inCorso, documento, linkMostre, scheda, testoPrincipale, pulisciTitolo, iso };
   if (typeof module !== 'undefined' && module.exports) module.exports = API; else root.SLEstrai = API;
 })(typeof globalThis !== 'undefined' ? globalThis : this);

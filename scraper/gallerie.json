@@ -188,7 +188,7 @@
       "pagina": "https://artnoble.it/exhibitions/", "link": "/exhibitions/[^/]+/?$", "altreCitta": "London|Londra" },
 
     { "id": "building", "nome": "BUILDING", "sito": "https://building-gallery.com",
-      "pagina": "https://building-gallery.com/mostre/", "link": "/exhibitions/[^/]+/?$" },
+            "pagina": "https://building-gallery.com/mostre/", "link": "/exhibitions/[^/]+/?$" },
 
     { "id": "giovannibonelli", "nome": "Galleria Giovanni Bonelli", "sito": "https://www.galleriagiovannibonelli.com",
       "pagina": "https://www.galleriagiovannibonelli.com/mostre/", "link": "/mostra/[^/]+/?$", "altreCitta": "Pietrasanta|Canneto" },
@@ -200,7 +200,7 @@
       "pagina": "https://www.galleriascia.it/", "_nota": "da verificare: il sito non si è aperto durante il controllo" },
 
     { "id": "elpis", "nome": "Fondazione Elpis", "sito": "https://fondazioneelpis.org",
-      "pagina": "https://fondazioneelpis.org/", "link": "/exhibitions/[^/]+$", "altreCitta": "Palermo" },
+            "pagina": "https://fondazioneelpis.org/", "link": "/exhibitions/[^/]+$", "altreCitta": "Palermo", "preferisciFoto": true},
 
     { "id": "spazioserra", "nome": "spazioSERRA", "sito": "https://www.spazioserra.org",
       "pagina": "https://www.spazioserra.org/exhibitions", "link": "/exhibitions/[^/]+$", "maxSchede": 3 },

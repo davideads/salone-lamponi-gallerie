@@ -296,7 +296,6 @@
       "link": "galleriadellachiusa\\.it/(mostre/)?[a-z0-9-]{8,}/?$",
       "escludi": "/(autori-in-galleria|eventi-speciali|galleria-della-chiusa)",
       "maxSchede": 6
-    },
      },
     {
       "id": "gracis",

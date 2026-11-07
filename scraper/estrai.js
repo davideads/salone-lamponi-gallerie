@@ -26,10 +26,11 @@
     const out = [];
     const prendi = (re, f) => { let x; re.lastIndex = 0; while ((x = re.exec(testo))) { const r = f(x); if (r) out.push(Object.assign(r, { i: x.index, fine: x.index + x[0].length })); } };
     // 15.10.2026 · 15/10/2026 · 01.10. · 15-10-2026
-    prendi(/(?<![\d.])(\d{1,2})[.\/-](\d{1,2})(?:[.\/-](\d{4}|\d{2}))?\.?(?![\d\/])/g, x => {
+    prendi(/(?<![\d.])(\d{1,2})[.\/-](\d{1,2})(?:[.\/-](\d{4}|\d{2}(?![.\/-]\d)))?\.?(?![\d\/])/g, x => {
       const g = +x[1], m = +x[2]; if (g < 1 || g > 31 || m < 1 || m > 12) return null;
       // senza anno serve almeno il punto finale ("01.10.") per non confondere con altri numeri
-      if (!x[3] && !/\.$/.test(x[0])) return null;
+      // senza anno: va bene "01.10." oppure "24.09 - 31.10.2026" (seguita da un'altra data)
+      if (!x[3] && !/\.$/.test(x[0]) && !/^\s*[–—-]\s*\d/.test(testo.slice(x.index + x[0].length))) return null;
       let a = x[3] ? +x[3] : null; if (a !== null && a < 100) a += 2000;
       return { g, m, a };
     });

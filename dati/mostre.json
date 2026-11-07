@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-11-06T22:03:20.733Z",
+  "aggiornato": "2026-11-07T00:58:54.071Z",
   "totale": 9,
   "mostre": [
     {
@@ -252,24 +252,26 @@
       "esito": "ok",
       "mostre": 1,
       "note": [
-        "link trovati: 7",
+        "link trovati: 9",
         "schede lette: 1, mostre in corso: 1"
       ]
     },
     {
       "galleria": "Tommaso Calabro",
-      "esito": "errore",
+      "esito": "ok",
       "mostre": 0,
       "note": [
-        "fetch failed"
+        "link trovati: 25",
+        "schede lette: 0, mostre in corso: 0"
       ]
     },
     {
       "galleria": "ZERO…",
-      "esito": "errore",
+      "esito": "ok",
       "mostre": 0,
       "note": [
-        "fetch failed"
+        "link trovati: 52",
+        "schede lette: 4, mostre in corso: 0"
       ]
     }
   ]

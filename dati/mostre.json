@@ -1,6 +1,6 @@
 {
-  "aggiornato": "2026-11-07T11:21:14.582Z",
-  "totale": 24,
+  "aggiornato": "2026-11-07T18:02:09.116Z",
+  "totale": 33,
   "mostre": [
     {
       "galleria": "Lia Rumma",
@@ -11,6 +11,36 @@
       "dal": "2026-11-05",
       "al": null,
       "sito": "https://www.liarumma.it"
+    },
+    {
+      "galleria": "Cassina Projects",
+      "id": "cassinaprojects",
+      "titolo": "Relaxing Box — Overview",
+      "immagine": "https://static-assets.artlogic.net/w_1200,h_630,c_fill,f_auto,fl_lossy,q_auto/ws-artlogicwebsite0948/usr/images/exhibitions/main_image_override/48/_b9m5442.jpg",
+      "link": "https://www.cassinaprojects.com/exhibitions/48-relaxing-box-zsofia-keresztes/overview/",
+      "dal": "2026-11-05",
+      "al": "2027-01-22",
+      "sito": "https://www.cassinaprojects.com"
+    },
+    {
+      "galleria": "Fondazione Marconi",
+      "id": "fondazionemarconi",
+      "titolo": "GIANNI COLOMBO. Vocale con accento. A cura di Marco Scotini",
+      "immagine": "https://www.fondazionemarconi.org/content/photos/fondazione-2026-11-07-09-14-40-219200.jpg",
+      "link": "https://www.fondazionemarconi.org/it/exhibition/gianni-colombo-vocale-con-accento-a-cura-di-marco-scotini",
+      "dal": "2026-11-05",
+      "al": "2027-02-27",
+      "sito": "https://www.fondazionemarconi.org"
+    },
+    {
+      "galleria": "Marcorossi artecontemporanea",
+      "id": "marcorossi",
+      "titolo": "Ivan Theimer — Terrecotte",
+      "immagine": "https://www.marcorossiartecontemporanea.com/wp-content/uploads/2026/10/Ivan_Theimer_Testa06_1-02.jpg",
+      "link": "https://www.marcorossiartecontemporanea.com/ivan-theimer-terrecotte/",
+      "dal": "2026-11-04",
+      "al": "2027-01-22",
+      "sito": "https://www.marcorossiartecontemporanea.com"
     },
     {
       "galleria": "ICA Milano",
@@ -103,6 +133,16 @@
       "sito": "https://www.galleriagiovannibonelli.com"
     },
     {
+      "galleria": "Ribot",
+      "id": "ribot",
+      "titolo": "The Skin of Time",
+      "immagine": "https://www.ribotgallery.com/wp-content/uploads/2026/08/Felix-Schramm-The-Skin-of-Time-2026-installation-view-@RIBOT1-1024x667.jpg",
+      "link": "https://www.ribotgallery.com/the-skin-of-time/",
+      "dal": "2026-09-30",
+      "al": "2026-11-07",
+      "sito": "https://www.ribotgallery.com"
+    },
+    {
       "galleria": "Galleria Raffaella Cortese",
       "id": "raffaellacortese",
       "titolo": "Metamorfosi",
@@ -163,6 +203,26 @@
       "sito": "https://cardigallery.com"
     },
     {
+      "galleria": "Pirelli HangarBicocca",
+      "id": "hangarbicocca",
+      "titolo": "Aki Sasamoto: XYZ",
+      "immagine": "https://web-assets-hangarbicocca.pirelli.com/wp-content/uploads/2024/12/Pirelli-HangarBicocca.jpg",
+      "link": "https://pirellihangarbicocca.org/mostra/aki-sasamoto/",
+      "dal": "2026-09-17",
+      "al": "2027-01-17",
+      "sito": "https://pirellihangarbicocca.org"
+    },
+    {
+      "galleria": "Osart Gallery",
+      "id": "osart",
+      "titolo": "Principia — Vincenzo Agnetti",
+      "immagine": "https://static.wixstatic.com/media/163085_35ce76af944a45b9919988982846f161~mv2.jpg/v1/fill/w_750,h_749,al_c/163085_35ce76af944a45b9919988982846f161~mv2.jpg",
+      "link": "https://www.osartgallery.com/principia-vincenzo-agnetti",
+      "dal": "2026-09-17",
+      "al": "2026-11-13",
+      "sito": "https://www.osartgallery.com"
+    },
+    {
       "galleria": "Thaddaeus Ropac",
       "id": "ropac",
       "titolo": "Leoncillo — Perché più bruci",
@@ -173,6 +233,16 @@
       "sito": "https://ropac.net"
     },
     {
+      "galleria": "Dep Art Gallery",
+      "id": "depart",
+      "titolo": "20 ANNI 2006 — 2026 Mostra Evento Comunicato Stampa — Dep Art Milano",
+      "immagine": "https://www.depart.it/img/DEP-ART-GALLERY-20-ANNI_id242.jpg",
+      "link": "https://www.depart.it/it/mostra-di-DEP-ART-GALLERY-20-ANNI-2006-2026-177.htm",
+      "dal": "2026-06-24",
+      "al": "2026-12-19",
+      "sito": "https://www.depart.it"
+    },
+    {
       "galleria": "Christian Stein",
       "id": "christianstein",
       "titolo": "GIULIO PAOLINI — IN STUDIO (ORA COME ALLORA)",
@@ -181,6 +251,16 @@
       "dal": null,
       "al": null,
       "sito": "https://www.galleriachristianstein.it"
+    },
+    {
+      "galleria": "Viasaterna",
+      "id": "viasaterna",
+      "titolo": "Represented Artists",
+      "immagine": "https://freight.cargo.site/w/840/i/fc1287bc520c1a675dd41f6590e0ae984721889e2b4260a13e4fb6829746a613/1506704397-6fbe23476cdbc7e909d28cae3f92daeb-840x979.jpg",
+      "link": "https://viasaterna.com/Represented-Artists",
+      "dal": null,
+      "al": null,
+      "sito": "https://viasaterna.com"
     },
     {
       "galleria": "ICA Milano",
@@ -216,7 +296,7 @@
       "galleria": "Gió Marconi",
       "id": "giomarconi",
       "titolo": "Vocale con accento",
-      "immagine": "https://giomarconi.com/content/exhibitions/gio-marconi-2026-11-04-14-50-50-299500.jpg",
+      "immagine": "https://giomarconi.com/content/photos/gio-marconi-2026-11-07-15-02-47-131900.jpg",
       "link": "https://giomarconi.com/en/exhibition/vocale-con-accento",
       "dal": "2026-11-06",
       "al": "2027-02-27",
@@ -233,6 +313,16 @@
       "sito": "https://colomboarte.com"
     },
     {
+      "galleria": "Pirelli HangarBicocca",
+      "id": "hangarbicocca",
+      "titolo": "Luciano Fabro: Abitare lo spazio",
+      "immagine": "https://web-assets-hangarbicocca.pirelli.com/wp-content/uploads/2026/10/Thum_Bubble_Guida_Luciano-Fabro.jpg",
+      "link": "https://pirellihangarbicocca.org/mostra/luciano-fabro/",
+      "dal": "2026-10-08",
+      "al": "2027-02-21",
+      "sito": "https://pirellihangarbicocca.org"
+    },
+    {
       "galleria": "BUILDING",
       "id": "building",
       "titolo": "Per filo e per segno — 11/12. Claudia Losi",
@@ -244,6 +334,15 @@
     }
   ],
   "rapporto": [
+    {
+      "galleria": "10 A.M. ART",
+      "esito": "ok",
+      "mostre": 0,
+      "note": [
+        "link trovati: 42",
+        "schede lette: 0, mostre in corso: 0"
+      ]
+    },
     {
       "galleria": "A arte Invernizzi",
       "esito": "ok",
@@ -259,7 +358,7 @@
       "mostre": 0,
       "note": [
         "link trovati: 10",
-        "schede lette: 1, mostre in corso: 0"
+        "schede lette: 0, mostre in corso: 0"
       ]
     },
     {
@@ -281,6 +380,16 @@
       ]
     },
     {
+      "galleria": "C+N Gallery Canepaneri",
+      "esito": "ok",
+      "mostre": 0,
+      "note": [
+        "link trovati: 1",
+        "scartata (non a Milano): https://www.canepaneri.com/easyEvents/EventiLeggi.asp?pid=1&EventiID=319",
+        "schede lette: 1, mostre in corso: 0"
+      ]
+    },
+    {
       "galleria": "Cardi Gallery",
       "esito": "ok",
       "mostre": 1,
@@ -296,6 +405,15 @@
       "note": [
         "link trovati: 42",
         "schede lette: 1, mostre in corso: 0"
+      ]
+    },
+    {
+      "galleria": "Cassina Projects",
+      "esito": "ok",
+      "mostre": 1,
+      "note": [
+        "link trovati: 40",
+        "schede lette: 1, mostre in corso: 1"
       ]
     },
     {
@@ -336,6 +454,15 @@
       ]
     },
     {
+      "galleria": "Dep Art Gallery",
+      "esito": "ok",
+      "mostre": 1,
+      "note": [
+        "link trovati: 56",
+        "schede lette: 1, mostre in corso: 1"
+      ]
+    },
+    {
       "galleria": "Federico Vavassori",
       "esito": "ok",
       "mostre": 0,
@@ -351,6 +478,49 @@
       "note": [
         "link trovati: 3",
         "schede lette: 2, mostre in corso: 2"
+      ]
+    },
+    {
+      "galleria": "Fondazione Marconi",
+      "esito": "ok",
+      "mostre": 1,
+      "note": [
+        "link trovati: 76",
+        "schede lette: 10, mostre in corso: 1"
+      ]
+    },
+    {
+      "galleria": "Fondazione Mudima",
+      "esito": "ok",
+      "mostre": 0,
+      "note": [
+        "link trovati: 24",
+        "schede lette: 1, mostre in corso: 0"
+      ]
+    },
+    {
+      "galleria": "Fondazione Nicola Trussardi",
+      "esito": "ok",
+      "mostre": 0,
+      "note": [
+        "link trovati: 35",
+        "schede lette: 4, mostre in corso: 0"
+      ]
+    },
+    {
+      "galleria": "Fondazione Prada",
+      "esito": "errore",
+      "mostre": 0,
+      "note": [
+        "HTTP 403"
+      ]
+    },
+    {
+      "galleria": "Fondazione Sozzani",
+      "esito": "errore",
+      "mostre": 0,
+      "note": [
+        "This operation was aborted"
       ]
     },
     {
@@ -405,6 +575,24 @@
       "mostre": 0,
       "note": [
         "fetch failed"
+      ]
+    },
+    {
+      "galleria": "Galleria Patricia Armocida",
+      "esito": "ok",
+      "mostre": 0,
+      "note": [
+        "link trovati: 60",
+        "schede lette: 4, mostre in corso: 0"
+      ]
+    },
+    {
+      "galleria": "Galleria Poggiali",
+      "esito": "ok",
+      "mostre": 0,
+      "note": [
+        "link trovati: 28",
+        "schede lette: 0, mostre in corso: 0"
       ]
     },
     {
@@ -480,6 +668,24 @@
       ]
     },
     {
+      "galleria": "Marcorossi artecontemporanea",
+      "esito": "ok",
+      "mostre": 1,
+      "note": [
+        "link trovati: 28",
+        "schede lette: 1, mostre in corso: 1"
+      ]
+    },
+    {
+      "galleria": "Martina Simeti",
+      "esito": "ok",
+      "mostre": 0,
+      "note": [
+        "link trovati: 34",
+        "schede lette: 3, mostre in corso: 0"
+      ]
+    },
+    {
       "galleria": "Massimo De Carlo",
       "esito": "ok",
       "mostre": 1,
@@ -507,6 +713,24 @@
       ]
     },
     {
+      "galleria": "Osart Gallery",
+      "esito": "ok",
+      "mostre": 1,
+      "note": [
+        "link trovati: 43",
+        "schede lette: 1, mostre in corso: 1"
+      ]
+    },
+    {
+      "galleria": "Pirelli HangarBicocca",
+      "esito": "ok",
+      "mostre": 2,
+      "note": [
+        "link trovati: 6",
+        "schede lette: 2, mostre in corso: 2"
+      ]
+    },
+    {
       "galleria": "Prometeo Gallery Ida Pisani",
       "esito": "ok",
       "mostre": 0,
@@ -523,6 +747,15 @@
         "link trovati: 0",
         "schede lette: 0, mostre in corso: 0",
         "nessun link trovato nella pagina elenco"
+      ]
+    },
+    {
+      "galleria": "Ribot",
+      "esito": "ok",
+      "mostre": 1,
+      "note": [
+        "link trovati: 49",
+        "schede lette: 3, mostre in corso: 1"
       ]
     },
     {
@@ -550,6 +783,15 @@
       "note": [
         "link trovati: 25",
         "schede lette: 0, mostre in corso: 0"
+      ]
+    },
+    {
+      "galleria": "Viasaterna",
+      "esito": "ok",
+      "mostre": 1,
+      "note": [
+        "link trovati: 7",
+        "schede lette: 1, mostre in corso: 1"
       ]
     },
     {

@@ -1,6 +1,6 @@
 {
-  "aggiornato": "2026-11-07T00:58:54.071Z",
-  "totale": 9,
+  "aggiornato": "2026-11-07T01:08:29.051Z",
+  "totale": 17,
   "mostre": [
     {
       "galleria": "Lia Rumma",
@@ -11,6 +11,26 @@
       "dal": "2026-11-05",
       "al": null,
       "sito": "https://www.liarumma.it"
+    },
+    {
+      "galleria": "ICA Milano",
+      "id": "icamilano",
+      "titolo": "Éric Baudelaire. When There Is No More Music to Write",
+      "immagine": "https://www.icamilano.it/sites/default/files/events/cover/2026-11/%C3%89ric%20Baudelaire_When%20There%20is%20no%20more%20Music%20to%20Write_10%2C26_0140.jpg",
+      "link": "https://www.icamilano.it/it/mostre/eric-baudelaire-when-there-no-more-music-write",
+      "dal": "2026-10-29",
+      "al": "2026-12-19",
+      "sito": "https://www.icamilano.it"
+    },
+    {
+      "galleria": "Fondazione Elpis",
+      "id": "elpis",
+      "titolo": "Phantom Armour",
+      "immagine": "https://elpis-assets.fra1.cdn.digitaloceanspaces.com/assets/fe/fe_social-share.png",
+      "link": "https://fondazioneelpis.org/exhibitions/phantom-armour",
+      "dal": "2026-10-16",
+      "al": "2027-01-31",
+      "sito": "https://fondazioneelpis.org"
     },
     {
       "galleria": "Massimo De Carlo",
@@ -33,6 +53,26 @@
       "sito": "https://giomarconi.com"
     },
     {
+      "galleria": "ArtNoble Gallery",
+      "id": "artnoble",
+      "titolo": "All together: \"Goodbye Master!\"",
+      "immagine": "https://artnoble.it/wp-content/themes/yootheme/cache/All-together-22Goodbye-Master22-Installation-View-courtesy-ArtNoble-Gallery-Milan-ph-credit-M.-Pedranti-1-8-scaled-4d501b36.jpeg",
+      "link": "https://artnoble.it/exhibitions/all-together-goodbye-master/",
+      "dal": "2026-09-30",
+      "al": "2026-12-15",
+      "sito": "https://artnoble.it"
+    },
+    {
+      "galleria": "Galleria Giovanni Bonelli",
+      "id": "giovannibonelli",
+      "titolo": "In Space No One Can Hear You Laugh (Stay Human) — Dieci Anni Dopo",
+      "immagine": "https://www.galleriagiovannibonelli.com/wp-content/uploads/2026/10/Bon26_4_205B_Luca-Casonato_HR-scaled.jpg",
+      "link": "https://www.galleriagiovannibonelli.com/mostra/in-space-no-one-can-hear-you-laugh-stay-human-dieci-anni-dopo/",
+      "dal": "2026-09-30",
+      "al": "2026-11-14",
+      "sito": "https://www.galleriagiovannibonelli.com"
+    },
+    {
       "galleria": "Galleria Raffaella Cortese",
       "id": "raffaellacortese",
       "titolo": "Metamorfosi",
@@ -51,6 +91,16 @@
       "dal": "2026-09-24",
       "al": "2027-01-09",
       "sito": "https://monicadecardenas.com"
+    },
+    {
+      "galleria": "Colombo's Gallery",
+      "id": "colombo",
+      "titolo": "108 — GranTour",
+      "immagine": "https://www.colomboarte.com/wp-content/uploads/2026/09/108-Tentazioni-di-SantAntonio-2026-tecnica-mista-su-tela-120x100-cm-senza-cornice-scaled.jpg",
+      "link": "https://colomboarte.com/108-grantour/",
+      "dal": "2026-09-24",
+      "al": "2026-11-09",
+      "sito": "https://colomboarte.com"
     },
     {
       "galleria": "Cardi Gallery",
@@ -83,6 +133,26 @@
       "sito": "https://www.galleriachristianstein.it"
     },
     {
+      "galleria": "ICA Milano",
+      "id": "icamilano",
+      "titolo": "Leonardo Devito. L'Addio",
+      "immagine": "https://www.icamilano.it/sites/default/files/events/cover/2026-11/0G7A9282_300dpi.jpg",
+      "link": "https://www.icamilano.it/it/mostre/leonardo-devito-laddio",
+      "dal": "2026-10-29",
+      "al": "2026-12-19",
+      "sito": "https://www.icamilano.it"
+    },
+    {
+      "galleria": "Fondazione Elpis",
+      "id": "elpis",
+      "titolo": "Raptor del Sol",
+      "immagine": "https://elpis-assets.fra1.cdn.digitaloceanspaces.com/assets/fe/fe_social-share.png",
+      "link": "https://fondazioneelpis.org/exhibitions/raptor-del-sol",
+      "dal": "2026-10-16",
+      "al": "2026-12-31",
+      "sito": "https://fondazioneelpis.org"
+    },
+    {
       "galleria": "Gió Marconi",
       "id": "giomarconi",
       "titolo": "Vocale con accento",
@@ -91,6 +161,16 @@
       "dal": "2026-11-06",
       "al": "2027-02-27",
       "sito": "https://giomarconi.com"
+    },
+    {
+      "galleria": "Colombo's Gallery",
+      "id": "colombo",
+      "titolo": "Bertrand Loubé — The Cut-Outs",
+      "immagine": "https://www.colomboarte.com/wp-content/uploads/2026/09/Bertrand-Loube-papier-colle-N%C2%B057-2026-gouache-on-paper-30x21-cm-903x1200.jpg",
+      "link": "https://colomboarte.com/bertrand-loube-the-cut-outs/",
+      "dal": "2026-09-24",
+      "al": "2026-11-09",
+      "sito": "https://colomboarte.com"
     }
   ],
   "rapporto": [
@@ -103,12 +183,48 @@
       ]
     },
     {
+      "galleria": "Anni Wu",
+      "esito": "ok",
+      "mostre": 0,
+      "note": [
+        "link trovati: 10",
+        "schede lette: 10, mostre in corso: 0"
+      ]
+    },
+    {
+      "galleria": "ArtNoble Gallery",
+      "esito": "ok",
+      "mostre": 1,
+      "note": [
+        "link trovati: 26",
+        "schede lette: 1, mostre in corso: 1"
+      ]
+    },
+    {
+      "galleria": "BUILDING",
+      "esito": "ok",
+      "mostre": 0,
+      "note": [
+        "link trovati: 158",
+        "schede lette: 0, mostre in corso: 0"
+      ]
+    },
+    {
       "galleria": "Cardi Gallery",
       "esito": "ok",
       "mostre": 1,
       "note": [
         "link trovati: 179",
         "schede lette: 1, mostre in corso: 1"
+      ]
+    },
+    {
+      "galleria": "Casa degli Artisti",
+      "esito": "ok",
+      "mostre": 0,
+      "note": [
+        "link trovati: 42",
+        "schede lette: 1, mostre in corso: 0"
       ]
     },
     {
@@ -140,12 +256,30 @@
       ]
     },
     {
+      "galleria": "Colombo's Gallery",
+      "esito": "ok",
+      "mostre": 2,
+      "note": [
+        "link trovati: 174",
+        "schede lette: 6, mostre in corso: 2"
+      ]
+    },
+    {
       "galleria": "Federico Vavassori",
       "esito": "ok",
       "mostre": 0,
       "note": [
         "link trovati: 72",
         "schede lette: 2, mostre in corso: 0"
+      ]
+    },
+    {
+      "galleria": "Fondazione Elpis",
+      "esito": "ok",
+      "mostre": 2,
+      "note": [
+        "link trovati: 3",
+        "schede lette: 2, mostre in corso: 2"
       ]
     },
     {
@@ -158,6 +292,42 @@
       ]
     },
     {
+      "galleria": "Galleria della Chiusa",
+      "esito": "ok",
+      "mostre": 0,
+      "note": [
+        "link trovati: 5",
+        "schede lette: 0, mostre in corso: 0"
+      ]
+    },
+    {
+      "galleria": "Galleria Fumagalli",
+      "esito": "ok",
+      "mostre": 0,
+      "note": [
+        "link trovati: 98",
+        "schede lette: 1, mostre in corso: 0"
+      ]
+    },
+    {
+      "galleria": "Galleria Giovanni Bonelli",
+      "esito": "ok",
+      "mostre": 1,
+      "note": [
+        "scartata (non a Milano): https://www.galleriagiovannibonelli.com/mostra/piazza-duomo-i-occasioni-dincontrotributo-a-piero-cavellini/",
+        "scartata (non a Milano): https://www.galleriagiovannibonelli.com/mostra/polvere-e-respiri-i-pietrasanta-2025/",
+        "schede lette: 10, mostre in corso: 1"
+      ]
+    },
+    {
+      "galleria": "Galleria Matria",
+      "esito": "errore",
+      "mostre": 0,
+      "note": [
+        "fetch failed"
+      ]
+    },
+    {
       "galleria": "Galleria Raffaella Cortese",
       "esito": "ok",
       "mostre": 1,
@@ -167,11 +337,30 @@
       ]
     },
     {
+      "galleria": "Galleria Scia",
+      "esito": "errore",
+      "mostre": 0,
+      "note": [
+        "link trovati: 0",
+        "schede lette: 0, mostre in corso: 0",
+        "nessun link trovato nella pagina elenco"
+      ]
+    },
+    {
       "galleria": "Gió Marconi",
       "esito": "ok",
       "mostre": 2,
       "note": [
         "link trovati: 128",
+        "schede lette: 2, mostre in corso: 2"
+      ]
+    },
+    {
+      "galleria": "ICA Milano",
+      "esito": "ok",
+      "mostre": 2,
+      "note": [
+        "link trovati: 41",
         "schede lette: 2, mostre in corso: 2"
       ]
     },
@@ -199,6 +388,15 @@
       "note": [
         "link trovati: 32",
         "schede lette: 0, mostre in corso: 0"
+      ]
+    },
+    {
+      "galleria": "M77 Gallery",
+      "esito": "ok",
+      "mostre": 0,
+      "note": [
+        "link trovati: 34",
+        "schede lette: 10, mostre in corso: 0"
       ]
     },
     {
@@ -245,6 +443,15 @@
         "link trovati: 0",
         "schede lette: 0, mostre in corso: 0",
         "nessun link trovato nella pagina elenco"
+      ]
+    },
+    {
+      "galleria": "spazioSERRA",
+      "esito": "ok",
+      "mostre": 0,
+      "note": [
+        "link trovati: 5",
+        "schede lette: 3, mostre in corso: 0"
       ]
     },
     {

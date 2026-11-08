@@ -1,6 +1,6 @@
 {
-  "aggiornato": "2026-11-07T18:02:09.116Z",
-  "totale": 33,
+  "aggiornato": "2026-11-08T06:08:24.642Z",
+  "totale": 32,
   "mostre": [
     {
       "galleria": "Lia Rumma",
@@ -131,16 +131,6 @@
       "dal": "2026-09-30",
       "al": "2026-11-14",
       "sito": "https://www.galleriagiovannibonelli.com"
-    },
-    {
-      "galleria": "Ribot",
-      "id": "ribot",
-      "titolo": "The Skin of Time",
-      "immagine": "https://www.ribotgallery.com/wp-content/uploads/2026/08/Felix-Schramm-The-Skin-of-Time-2026-installation-view-@RIBOT1-1024x667.jpg",
-      "link": "https://www.ribotgallery.com/the-skin-of-time/",
-      "dal": "2026-09-30",
-      "al": "2026-11-07",
-      "sito": "https://www.ribotgallery.com"
     },
     {
       "galleria": "Galleria Raffaella Cortese",
@@ -517,10 +507,11 @@
     },
     {
       "galleria": "Fondazione Sozzani",
-      "esito": "errore",
+      "esito": "ok",
       "mostre": 0,
       "note": [
-        "This operation was aborted"
+        "link trovati: 1",
+        "schede lette: 1, mostre in corso: 0"
       ]
     },
     {
@@ -751,11 +742,10 @@
     },
     {
       "galleria": "Ribot",
-      "esito": "ok",
-      "mostre": 1,
+      "esito": "errore",
+      "mostre": 0,
       "note": [
-        "link trovati: 49",
-        "schede lette: 3, mostre in corso: 1"
+        "fetch failed"
       ]
     },
     {

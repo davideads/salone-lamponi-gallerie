@@ -21,6 +21,7 @@
       "id": "giomarconi",
       "nome": "Gió Marconi",
       "sito": "https://giomarconi.com",
+      "logo": "https://www.salonelamponi.it/assets/img/loghi gallerie/logo giomarconi.png",
       "pagina": "https://giomarconi.com/en/exhibitions/current",
       "link": "/en/exhibition/[^/]+$",
       "preferisciFoto": true,
@@ -245,6 +246,7 @@
       "nome": "Colombo's Gallery",
       "sito": "https://colomboarte.com",
       "pagina": "https://colomboarte.com/mostre/",
+      "logo": "https://www.salonelamponi.it/assets/img/loghi gallerie/GALLERY_COLOMBO.png",
       "link": "colomboarte\\.com/[a-z0-9-]{6,}/?$",
       "escludi": "/(mostre|artisti|collaborazioni|cataloghi|la-galleria|contatti|informativa|negozio|shop|carrello|testimonial)/?$",
       "maxSchede": 6
@@ -285,6 +287,7 @@
       "id": "icamilano",
       "nome": "ICA Milano",
       "sito": "https://www.icamilano.it",
+      "logo": https://",
       "pagina": "https://www.icamilano.it/it/mostre",
       "link": "/it/mostre/[^/]+$"
     },
@@ -319,6 +322,7 @@
       "nome": "Pirelli HangarBicocca",
       "sito": "https://pirellihangarbicocca.org",
       "pagina": "https://pirellihangarbicocca.org/exhibitions/in-corso/",
+      "logo": "https://www.salonelamponi.it/assets/img/loghi gallerie/GALLERY_COLOMBO.png",
       "link": "/mostra/[^/]+/?$",
       "escludi": "el-seed",
       "dataSingola": false
@@ -336,6 +340,7 @@
       "nome": "Cassina Projects",
       "sito": "https://www.cassinaprojects.com",
       "pagina": "https://www.cassinaprojects.com/cassina-projects/exhibitions/",
+      "logo": "https://www.salonelamponi.it/assets/img/loghi gallerie/cassina project.png",
       "link": "/exhibitions/\\d+-[^/]+/(overview/)?$"
     },
     {
@@ -430,6 +435,7 @@
       "sito": "https://www.fondazionemarconi.org",
       "pagina": "https://www.fondazionemarconi.org/it/exhibitions/current",
       "link": "/it/exhibition/[^/]+$",
+      "logo": "https://www.salonelamponi.it/assets/img/loghi gallerie/cassina project.png",
       "preferisciFoto": true,
       "immagineDa": [
         "_lqip",

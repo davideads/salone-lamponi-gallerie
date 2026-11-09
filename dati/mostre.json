@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-11-09T16:49:30.672Z",
+  "aggiornato": "2026-11-09T16:59:13.533Z",
   "totale": 32,
   "mostre": [
     {
@@ -29,7 +29,7 @@
       "link": "https://www.fondazionemarconi.org/it/exhibition/gianni-colombo-vocale-con-accento-a-cura-di-marco-scotini",
       "dal": "2026-11-05",
       "al": "2027-02-27",
-      "logo": "https://www.salonelamponi.it/assets/img/loghi%20gallerie/cassina%20project.png",
+      "logo": "https://www.fondazionemarconi.org/www.salonelamponi.it/assets/img/loghi%20gallerie/logo-fondazionemarconi.jpg",
       "sito": "https://www.fondazionemarconi.org"
     },
     {
@@ -49,7 +49,7 @@
       "link": "https://www.icamilano.it/it/mostre/eric-baudelaire-when-there-no-more-music-write",
       "dal": "2026-10-29",
       "al": "2026-12-19",
-      "logo": "https://www.salonelamponi.it/assets/img/loghi%20gallerie/cassina%20project.png",
+      "logo": "https://www.salonelamponi.it/assets/img/loghi%20gallerie/ica.png",
       "sito": "https://www.icamilano.it"
     },
     {
@@ -201,7 +201,7 @@
       "link": "https://pirellihangarbicocca.org/mostra/aki-sasamoto/",
       "dal": "2026-09-17",
       "al": "2027-01-17",
-      "logo": "https://www.salonelamponi.it/assets/img/loghi%20gallerie/GALLERY_COLOMBO.png",
+      "logo": "https://www.salonelamponi.it/assets/img/loghi%20gallerie/Pirelli-HangarBicocca.jpg",
       "sito": "https://pirellihangarbicocca.org"
     },
     {
@@ -263,7 +263,7 @@
       "link": "https://www.icamilano.it/it/mostre/leonardo-devito-laddio",
       "dal": "2026-10-29",
       "al": "2026-12-19",
-      "logo": "https://www.salonelamponi.it/assets/img/loghi%20gallerie/cassina%20project.png",
+      "logo": "https://www.salonelamponi.it/assets/img/loghi%20gallerie/ica.png",
       "sito": "https://www.icamilano.it"
     },
     {
@@ -313,7 +313,7 @@
       "link": "https://pirellihangarbicocca.org/mostra/luciano-fabro/",
       "dal": "2026-10-08",
       "al": "2027-02-21",
-      "logo": "https://www.salonelamponi.it/assets/img/loghi%20gallerie/GALLERY_COLOMBO.png",
+      "logo": "https://www.salonelamponi.it/assets/img/loghi%20gallerie/Pirelli-HangarBicocca.jpg",
       "sito": "https://pirellihangarbicocca.org"
     },
     {
@@ -494,7 +494,7 @@
       "galleria": "Fondazione Marconi",
       "esito": "ok",
       "mostre": 1,
-      "logo": "https://www.salonelamponi.it/assets/img/loghi%20gallerie/cassina%20project.png",
+      "logo": "https://www.fondazionemarconi.org/www.salonelamponi.it/assets/img/loghi%20gallerie/logo-fondazionemarconi.jpg",
       "note": [
         "link trovati: 76",
         "schede lette: 10, mostre in corso: 1"
@@ -654,7 +654,7 @@
       "galleria": "ICA Milano",
       "esito": "ok",
       "mostre": 2,
-      "logo": "https://www.salonelamponi.it/assets/img/loghi%20gallerie/cassina%20project.png",
+      "logo": "https://www.salonelamponi.it/assets/img/loghi%20gallerie/ica.png",
       "note": [
         "link trovati: 41",
         "schede lette: 2, mostre in corso: 2"
@@ -763,7 +763,7 @@
       "galleria": "Pirelli HangarBicocca",
       "esito": "ok",
       "mostre": 2,
-      "logo": "https://www.salonelamponi.it/assets/img/loghi%20gallerie/GALLERY_COLOMBO.png",
+      "logo": "https://www.salonelamponi.it/assets/img/loghi%20gallerie/Pirelli-HangarBicocca.jpg",
       "note": [
         "link trovati: 6",
         "schede lette: 2, mostre in corso: 2"
@@ -792,12 +792,11 @@
     },
     {
       "galleria": "Ribot",
-      "esito": "ok",
+      "esito": "errore",
       "mostre": 0,
-      "logo": "https://www.ribotgallery.com/wp-content/uploads/2022/03/cropped-cropped-Ribot_logo-pos-neg-2-2-1.png",
+      "logo": "non trovato",
       "note": [
-        "link trovati: 49",
-        "schede lette: 2, mostre in corso: 0"
+        "fetch failed"
       ]
     },
     {

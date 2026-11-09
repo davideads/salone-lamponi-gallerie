@@ -287,7 +287,7 @@
       "id": "icamilano",
       "nome": "ICA Milano",
       "sito": "https://www.icamilano.it",
-      "logo": https://",
+      "logo": "https://www.salonelamponi.it/assets/img/loghi gallerie/cassina project.png",
       "pagina": "https://www.icamilano.it/it/mostre",
       "link": "/it/mostre/[^/]+$"
     },

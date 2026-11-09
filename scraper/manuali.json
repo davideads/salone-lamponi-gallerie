@@ -3,7 +3,7 @@
   "_esempio": {
     "galleria": "Nome galleria",
     "titolo": "Titolo della mostra",
-    "immagine": "https://indirizzo-immagine.jpg",
+    "id": "id-della-galleria-come-in-gallerie.json",
     "link": "https://pagina-della-mostra",
     "dal": "2026-11-10",
     "al": "2027-01-15"

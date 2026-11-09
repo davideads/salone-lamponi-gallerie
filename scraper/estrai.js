@@ -253,6 +253,78 @@
     return (utili.length ? utili : parti).join(' — ');
   }
 
+  /* ---------- logo della galleria ----------
+     Cercato nell'intestazione del sito: immagine o SVG con "logo" nel nome, oppure dentro il link alla home.
+     In gallerie.json si può indicare a mano: "logo": "https://..." (o "nessuno"), "logoNero": true per i loghi bianchi. */
+  const RE_LOGO = /logo|brand|marchio/i;
+  const RE_NON_LOGO = /sponsor|partner|social|instagram|facebook|twitter|whatsapp|newsletter|payoff|hamburger|loader|search|cerca|arrow|freccia|close|chiudi/i;
+  const RE_CHIARO = /white|bianc|negativ|light|inverse|_w\.|-w\./i;
+  function firma(el) {
+    if (!el || !el.getAttribute) return '';
+    return ['class', 'id', 'alt', 'title', 'aria-label'].map(a => el.getAttribute(a) || '').join(' ');
+  }
+  // SVG scritto dentro la pagina: diventa un'immagine "data:" (nessun file esterno)
+  function svgInLinea(svg) {
+    if (svg.querySelector('use, image, foreignObject')) return null;
+    let s = svg.outerHTML || '';
+    if (!s || s.length > 40000) return null;
+    if (!/xmlns=/.test(s)) s = s.replace(/^<svg/i, '<svg xmlns="http://www.w3.org/2000/svg"');
+    s = s.replace(/currentColor/g, '#000');
+    const colori = (s.match(/(?:fill|stroke)\s*[=:]\s*["']?\s*(#[0-9a-f]{3,8}|white|black|rgb\([^)]*\))/gi) || [])
+      .map(c => c.replace(/.*[=:]\s*["']?\s*/, '').toLowerCase()).filter(c => c !== 'none');
+    const chiaro = colori.length > 0 && colori.every(c => /^(#fff(fff)?|white|rgb\(255,\s*255,\s*255\))$/.test(c));
+    return { url: 'data:image/svg+xml,' + encodeURIComponent(s), chiaro };
+  }
+  function eHome(href, base) {
+    const h = assoluto(href || '', base);
+    if (!h) return false;
+    try {
+      const u = new URL(h), b = new URL(base);
+      return u.host.replace(/^www\./, '') === b.host.replace(/^www\./, '') && /^\/((it|en)\/?)?(index\.(html?|php))?$/i.test(u.pathname);
+    } catch (_) { return false; }
+  }
+  function trovaLogo(doc, conf) {
+    const base = doc.__base || doc.__url;
+    const parole = (conf.nome || '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter(w => w.length > 3 && !/galleria|gallery|fondazione/.test(w));
+    let migliore = null, punti = -Infinity;
+    [...doc.querySelectorAll('img, svg')].forEach((n, i) => {
+      const img = /^img$/i.test(n.nodeName);
+      if (!img && n.parentNode && n.parentNode.closest && n.parentNode.closest('svg')) return;
+      const src = img ? immagineDa(n, base) : null;
+      if (img && !src) return;
+      const qui = firma(n) + ' ' + (src || '').split('/').pop();
+      if (RE_NON_LOGO.test(qui)) return;
+      let su = '';
+      for (let g = n.parentNode, k = 0; g && g.getAttribute && k < 4; g = g.parentNode, k++) su += ' ' + firma(g);
+      let p = 0;
+      if (RE_LOGO.test(qui)) p += 6;
+      if (RE_LOGO.test(su)) p += 4;
+      const a = n.closest && n.closest('a');
+      if (a && eHome(a.getAttribute('href'), base)) p += 4;
+      if (n.closest && n.closest('header, nav, [class*="header"], [id*="header"]')) p += 3;
+      if (n.closest && n.closest('footer, [class*="footer"], [id*="footer"]')) p -= 6;
+      const alt = ((img && n.getAttribute('alt')) || firma(a) || '').toLowerCase();
+      if (parole.some(w => alt.includes(w))) p += 3;
+      if (p < 6) return;
+      p -= i * 0.01; // a parità di indizi vince il primo nella pagina
+      if (p <= punti) return;
+      const v = img ? { url: src.replace(/^http:/, 'https:'), chiaro: RE_CHIARO.test(src.split('/').pop()) } : svgInLinea(n);
+      if (!v) return;
+      punti = p; migliore = v;
+    });
+    if (migliore) return migliore;
+    // ripiego: l'icona del sito per i dispositivi
+    const ico = doc.querySelector('link[rel~="apple-touch-icon"], link[rel="icon"][sizes="192x192"], link[rel="icon"][sizes="180x180"]');
+    const u = ico && assoluto(ico.getAttribute('href'), base);
+    return u ? { url: u.replace(/^http:/, 'https:'), chiaro: false, icona: true } : null;
+  }
+  function logoGalleria(doc, conf) {
+    if (conf.logo === 'nessuno') return null;
+    const l = conf.logo ? { url: assoluto(conf.logo, conf.sito || doc.__url), chiaro: false } : trovaLogo(doc, conf);
+    if (l && conf.logoNero !== undefined) l.chiaro = !!conf.logoNero;
+    return l;
+  }
+
   /* dati della scheda mostra */
   function scheda(doc, conf) {
     const titoloGrezzo = (conf.titoloSel && testoDi(doc.querySelector(conf.titoloSel))) ||
@@ -280,6 +352,12 @@
     const doc = documento(html, conf.pagina, P);
     const links = linkMostre(doc, conf);
     diario.push(`link trovati: ${links.length}`);
+    // logo: dalla pagina elenco; se lì non c'è (o c'è solo l'icona), dalla home del sito
+    let logo = logoGalleria(doc, conf);
+    if ((!logo || logo.icona) && !conf.logo && conf.sito && conf.sito.replace(/\/$/, '') !== conf.pagina.replace(/\/$/, '')) {
+      try { logo = trovaLogo(documento(await scarica(conf.sito), conf.sito, P), conf) || logo; } catch (_) { /* resta quello che c'è */ }
+      if (logo && conf.logoNero !== undefined) logo.chiaro = !!conf.logoNero;
+    }
     const mostre = [];
     let schedeLette = 0, passateDiFila = 0;
     const MAX_SCHEDE = conf.maxSchede || 10;
@@ -319,12 +397,12 @@
       if (!s.titolo) { diario.push(`senza titolo: ${l.url}`); continue; }
       mostre.push({
         // sempre https: la pagina del Salone scarta i collegamenti non sicuri
-        galleria: conf.nome, id: conf.id, titolo: s.titolo, immagine: s.immagine ? s.immagine.replace(/^http:/, 'https:') : null, link: l.url.replace(/^http:/, 'https:'),
+        galleria: conf.nome, id: conf.id, titolo: s.titolo, link: l.url.replace(/^http:/, 'https:'),
         dal: r ? r.dal : null, al: r ? r.al : null,
       });
     }
     diario.push(`schede lette: ${schedeLette}, mostre in corso: ${mostre.length}`);
-    return { mostre, diario };
+    return { mostre, diario, logo };
   }
 
   /* Solo mese e anno (es. "October, 2026"): inizio al primo del mese, valido se recente. */
@@ -336,6 +414,6 @@
     return diff >= 0 && diff <= (giorni || 75) ? { dal: iso(t), al: null } : null;
   }
 
-  const API = { meseRecente, leggiGalleria, inizioRecente, menzioni, intervallo, inCorso, documento, linkMostre, scheda, testoPrincipale, pulisciTitolo, iso };
+  const API = { trovaLogo, logoGalleria, meseRecente, leggiGalleria, inizioRecente, menzioni, intervallo, inCorso, documento, linkMostre, scheda, testoPrincipale, pulisciTitolo, iso };
   if (typeof module !== 'undefined' && module.exports) module.exports = API; else root.SLEstrai = API;
 })(typeof globalThis !== 'undefined' ? globalThis : this);

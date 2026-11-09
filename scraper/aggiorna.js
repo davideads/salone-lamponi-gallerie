@@ -54,6 +54,9 @@ async function main() {
   const precedente = leggiJSON(USCITA, { mostre: [] });
   const rapporto = [];
   const nuove = [];
+  const loghi = {}; // id galleria → logo
+  // loghi dell'ultimo giro: servono se un sito oggi non si legge
+  for (const m of precedente.mostre || []) if (m.logo && !loghi[m.id]) loghi[m.id] = { url: m.logo, chiaro: !!m.logoChiaro };
 
   // massimo 3 gallerie alla volta, per non pesare sui loro server
   const coda = scelte.slice();
@@ -62,8 +65,9 @@ async function main() {
       const g = coda.shift();
       const riga = { id: g.id, nome: g.nome, esito: 'ok', mostre: 0, note: [] };
       try {
-        const { mostre, diario } = await E.leggiGalleria(g, scarica, { DOMParser, oggi });
+        const { mostre, diario, logo } = await E.leggiGalleria(g, scarica, { DOMParser, oggi });
         riga.note = diario;
+        if (logo) loghi[g.id] = logo;
         if (/link trovati: 0\b/.test(diario[0])) throw new Error('nessun link trovato nella pagina elenco');
         mostre.forEach(m => { m.id = g.id; m.sito = g.sito; });
         nuove.push(...mostre);
@@ -77,6 +81,8 @@ async function main() {
         riga.mostre = vecchie.length;
         if (vecchie.length) riga.note.push(`tenute ${vecchie.length} mostre dall'aggiornamento precedente`);
       }
+      const lg = loghi[g.id];
+      riga.logo = !lg ? 'non trovato' : lg.url.startsWith('data:') ? 'SVG dalla pagina' : lg.url + (lg.icona ? ' (icona del sito)' : '');
       rapporto.push(riga);
       console.log(`${riga.esito === 'ok' ? '✓' : '✗'} ${g.nome}: ${riga.mostre} in corso${riga.esito !== 'ok' ? ' — ' + riga.note[riga.note.length - 1] : ''}`);
     }
@@ -88,7 +94,11 @@ async function main() {
 
   // mostre inserite a mano
   const manuali = leggiJSON(MANUALI, { mostre: [] }).mostre || [];
-  for (const m of manuali) if (m.titolo && m.link && ancoraInCorso(m)) nuove.push(Object.assign({ id: 'manuale', manuale: true }, m));
+  for (const m of manuali) if (m.titolo && m.link && ancoraInCorso(m)) {
+    // con "id" uguale a quello di gallerie.json la mostra prende il logo della galleria
+    const g = conf.find(x => x.id === m.id || x.nome === m.galleria);
+    nuove.push(Object.assign({ id: g ? g.id : 'manuale', manuale: true }, m, m.logo ? { logo: m.logo } : {}));
+  }
 
   // niente doppioni (stesso indirizzo), e solo mostre ancora in corso
   const viste = new Set();
@@ -96,14 +106,17 @@ async function main() {
     const k = (m.link || '').replace(/\/$/, '').toLowerCase();
     if (!k || viste.has(k) || !ancoraInCorso(m)) return false;
     viste.add(k); return true;
-  })).map(({ galleria, id, titolo, immagine, link, dal, al, sito, manuale }) =>
-    ({ galleria, id, titolo, immagine, link, dal, al, ...(sito ? { sito } : {}), ...(manuale ? { manuale } : {}) }));
+  })).map(({ galleria, id, titolo, link, dal, al, sito, manuale, logo }) => {
+    const lg = logo ? { url: logo, chiaro: false } : loghi[id];
+    return { galleria, id, titolo, link, dal, al, logo: lg ? lg.url : null, ...(lg && lg.chiaro ? { logoChiaro: true } : {}), ...(lg && lg.icona ? { logoIcona: true } : {}),
+      ...(sito ? { sito } : {}), ...(manuale ? { manuale } : {}) };
+  });
 
   const dati = {
     aggiornato: new Date().toISOString(),
     totale: finali.length,
     mostre: finali,
-    rapporto: rapporto.sort((a, b) => a.nome.localeCompare(b.nome)).map(r => ({ galleria: r.nome, esito: r.esito, mostre: r.mostre, note: r.note.slice(-3) })),
+    rapporto: rapporto.sort((a, b) => a.nome.localeCompare(b.nome)).map(r => ({ galleria: r.nome, esito: r.esito, mostre: r.mostre, logo: r.logo, note: r.note.slice(-3) })),
   };
   fs.mkdirSync(path.dirname(USCITA), { recursive: true });
   fs.writeFileSync(USCITA, JSON.stringify(dati, null, 2) + '\n');

@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-11-09T17:23:46.336Z",
+  "aggiornato": "2026-11-09T17:55:44.340Z",
   "totale": 33,
   "mostre": [
     {
@@ -101,6 +101,16 @@
       "al": "2026-12-23",
       "logo": "https://building-gallery.com/wp-content/themes/building/img/building-logo.png",
       "sito": "https://building-gallery.com"
+    },
+    {
+      "galleria": "Viasaterna",
+      "id": "viasaterna",
+      "titolo": "Giovanni Chiaramonte",
+      "link": "https://viasaterna.com/Giovanni-Chiaramonte",
+      "dal": "2026-10-06",
+      "al": "2026-12-11",
+      "logo": "https://freight.cargo.site/t/original/i/d3e89fa01c6c179d1c96ec37b83b5581a245aeae08e4d0c3878c198c2eac758e/viasaterna-logo.png",
+      "sito": "https://viasaterna.com"
     },
     {
       "galleria": "Gió Marconi",
@@ -255,16 +265,6 @@
       "logo": "https://static.wixstatic.com/media/6c3429_1bb7b107e62e4589ab02d69c2a1f6082%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/6c3429_1bb7b107e62e4589ab02d69c2a1f6082%7Emv2.png",
       "logoIcona": true,
       "sito": "https://www.galleriachristianstein.it"
-    },
-    {
-      "galleria": "Viasaterna",
-      "id": "viasaterna",
-      "titolo": "Represented Artists",
-      "link": "https://viasaterna.com/Represented-Artists",
-      "dal": null,
-      "al": null,
-      "logo": "https://freight.cargo.site/t/original/i/d3e89fa01c6c179d1c96ec37b83b5581a245aeae08e4d0c3878c198c2eac758e/viasaterna-logo.png",
-      "sito": "https://viasaterna.com"
     },
     {
       "galleria": "ICA Milano",
@@ -705,8 +705,9 @@
       "mostre": 1,
       "logo": "https://www.m77gallery.com/wp-content/uploads/2021/07/LOGO_M77_new.png",
       "note": [
-        "link trovati: 34",
-        "schede lette: 10, mostre in corso: 1"
+        "scheda non letta https://www.m77gallery.com/exhibitions/john-lurie-home-not-place-something-else/: HTTP 500",
+        "scheda non letta https://www.m77gallery.com/exhibitions/santi-moix-brooklyn-studio/: HTTP 500",
+        "schede lette: 2, mostre in corso: 1"
       ]
     },
     {
@@ -845,7 +846,7 @@
       "mostre": 1,
       "logo": "https://freight.cargo.site/t/original/i/d3e89fa01c6c179d1c96ec37b83b5581a245aeae08e4d0c3878c198c2eac758e/viasaterna-logo.png",
       "note": [
-        "link trovati: 7",
+        "link trovati: 38",
         "schede lette: 1, mostre in corso: 1"
       ]
     },

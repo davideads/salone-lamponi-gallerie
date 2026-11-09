@@ -1,16 +1,16 @@
 {
-  "aggiornato": "2026-11-09T17:12:12.091Z",
-  "totale": 32,
+  "aggiornato": "2026-11-09T17:23:46.336Z",
+  "totale": 33,
   "mostre": [
     {
-      "galleria": "Cassina Projects",
-      "id": "cassinaprojects",
-      "titolo": "Relaxing Box — Overview",
-      "link": "https://www.cassinaprojects.com/exhibitions/48-relaxing-box-zsofia-keresztes/overview/",
-      "dal": "2026-11-05",
-      "al": "2027-01-22",
-      "logo": "https://www.salonelamponi.it/assets/img/loghi%20gallerie/cassina%20project.png",
-      "sito": "https://www.cassinaprojects.com"
+      "galleria": "Galleria Gracis",
+      "id": "gracis",
+      "titolo": "ATANASIO SOLDATI — FRANCO FONTANA ESPLORAZIONI TRA FORMA E COLORE",
+      "link": "https://www.galleriagracis.com/it/mostre/atanasio-soldati-franco-fontana-esplorazioni-tra-forma-e-colore-2026/",
+      "dal": "2026-10-07",
+      "al": "2026-12-23",
+      "logo": "https://www.galleriagracis.com/wp-content/uploads/2019/04/gracis_logo.png",
+      "sito": "https://www.galleriagracis.com"
     },
     {
       "galleria": "Lia Rumma",
@@ -23,6 +23,16 @@
       "sito": "https://www.liarumma.it"
     },
     {
+      "galleria": "Cassina Projects",
+      "id": "cassinaprojects",
+      "titolo": "Relaxing Box — Overview",
+      "link": "https://www.cassinaprojects.com/exhibitions/48-relaxing-box-zsofia-keresztes/overview/",
+      "dal": "2026-11-05",
+      "al": "2027-01-22",
+      "logo": "https://www.salonelamponi.it/assets/img/loghi%20gallerie/cassina%20project.png",
+      "sito": "https://www.cassinaprojects.com"
+    },
+    {
       "galleria": "Fondazione Marconi",
       "id": "fondazionemarconi",
       "titolo": "GIANNI COLOMBO. Vocale con accento. A cura di Marco Scotini",
@@ -31,6 +41,16 @@
       "al": "2027-02-27",
       "logo": "https://www.salonelamponi.it/assets/img/loghi%20gallerie/logo-fondazionemarconi.jpg",
       "sito": "https://www.fondazionemarconi.org"
+    },
+    {
+      "galleria": "Fondazione Prada",
+      "id": "fondazioneprada",
+      "titolo": "Global Antiquity",
+      "link": "https://www.fondazioneprada.org/project/global-antiquity/",
+      "dal": "2026-11-05",
+      "al": "2027-03-01",
+      "logo": "https://www.fondazioneprada.org/wp-content/themes/roots/assets/img/fondazione_prada.svg",
+      "manuale": true
     },
     {
       "galleria": "Marcorossi artecontemporanea",
@@ -81,16 +101,6 @@
       "al": "2026-12-23",
       "logo": "https://building-gallery.com/wp-content/themes/building/img/building-logo.png",
       "sito": "https://building-gallery.com"
-    },
-    {
-      "galleria": "Galleria Gracis",
-      "id": "gracis",
-      "titolo": "ATANASIO SOLDATI — FRANCO FONTANA ESPLORAZIONI TRA FORMA E COLORE",
-      "link": "https://www.galleriagracis.com/it/mostre/atanasio-soldati-franco-fontana-esplorazioni-tra-forma-e-colore-2026/",
-      "dal": "2026-10-07",
-      "al": "2026-12-23",
-      "logo": "https://www.galleriagracis.com/wp-content/uploads/2019/04/gracis_logo.png",
-      "sito": "https://www.galleriagracis.com"
     },
     {
       "galleria": "Gió Marconi",
@@ -332,7 +342,7 @@
       "galleria": "10 A.M. ART",
       "esito": "ok",
       "mostre": 0,
-      "logo": "https://static.wixstatic.com/media/2d6806_1668570aa224482296bc92f1852c4b0f~mv2.jpg/v1/fill/w_87,h_52,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/10%20A_M_%20ART.jpg",
+      "logo": "https://static.wixstatic.com/media/2d6806_a1f82ebd3958491bb4c531118e7ab2fe%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/2d6806_a1f82ebd3958491bb4c531118e7ab2fe%7Emv2.png (icona del sito)",
       "note": [
         "link trovati: 42",
         "schede lette: 0, mostre in corso: 0"
@@ -524,16 +534,7 @@
       "galleria": "Fondazione Prada",
       "esito": "errore",
       "mostre": 0,
-      "logo": "non trovato",
-      "note": [
-        "HTTP 403"
-      ]
-    },
-    {
-      "galleria": "Fondazione Prada",
-      "esito": "errore",
-      "mostre": 0,
-      "logo": "non trovato",
+      "logo": "https://www.fondazioneprada.org/wp-content/themes/roots/assets/img/fondazione_prada.svg",
       "note": [
         "HTTP 403"
       ]
@@ -673,16 +674,7 @@
       "galleria": "kaufmann repetto",
       "esito": "errore",
       "mostre": 0,
-      "logo": "non trovato",
-      "note": [
-        "pagina di verifica anti-robot"
-      ]
-    },
-    {
-      "galleria": "kaufmann repetto",
-      "esito": "errore",
-      "mostre": 0,
-      "logo": "non trovato",
+      "logo": "https://kaufmannrepetto.com/app/themes/kaufmannrepetto-theme/dist/images/logo_hd-resized.png",
       "note": [
         "pagina di verifica anti-robot"
       ]
@@ -810,12 +802,11 @@
     },
     {
       "galleria": "Ribot",
-      "esito": "ok",
+      "esito": "errore",
       "mostre": 0,
-      "logo": "https://www.ribotgallery.com/wp-content/uploads/2022/03/cropped-cropped-Ribot_logo-pos-neg-2-2-1.png",
+      "logo": "non trovato",
       "note": [
-        "link trovati: 49",
-        "schede lette: 2, mostre in corso: 0"
+        "fetch failed"
       ]
     },
     {

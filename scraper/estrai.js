@@ -143,7 +143,8 @@
       if (h.replace(/^https?:\/\/(www\.)?/, '').split('/')[0] !== origine) continue;
       if (conf.escludi && new RegExp(conf.escludi, 'i').test(h)) continue;
       if (conf.__ok && !conf.__ok.has(h)) continue;
-      const t = testoDi(a);
+      // link senza testo (solo immagine): vale il testo alternativo dell'immagine, dove alcune gallerie scrivono titolo e date
+      const t = testoDi(a) || spazi([...a.querySelectorAll('img')].map(i => i.getAttribute('alt') || i.getAttribute('data-caption') || '').join(' '));
       const prec = visti.get(h);
       if (!prec) visti.set(h, { url: h, testo: t, testi: t ? [t] : [], contesto: contesto(a, re, base), img: immagineVicina(a, base) });
       else { if (t.length > prec.testo.length) prec.testo = t; if (t && !prec.testi.includes(t)) prec.testi.push(t); if (!prec.img) prec.img = immagineVicina(a, base); }

@@ -393,13 +393,10 @@
       "id": "viasaterna",
       "nome": "Viasaterna",
       "sito": "https://viasaterna.com",
-      "pagina": "https://viasaterna.com/",
+      "pagina": "https://viasaterna.com/Exhibitions-Archive",
       "link": "viasaterna\\.com/[A-Z][A-Za-z0-9-]+$",
-      "escludi": "/(Menu|Contacts|Museo-[^/]*)$",
-      "soloPrima": true,
-      "tutteInCorso": true,
-      "dataSingola": false,
-      "_nota": "il sito non mostra le date: viene presa la mostra in primo piano nella home"
+      "escludi": "/(Menu|Contacts|Contact-us|About|Represented-Artists|Artists-Menu|Exhibitions-Archive|Focus-Archive|News-archive|Museo-[^/]*)$",
+      "soloDateElenco": true
     },
     {
       "id": "marcorossi",

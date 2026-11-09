@@ -38,10 +38,13 @@ function ancoraInCorso(m) {
 }
 
 // alterna le gallerie, così il mosaico non mostra due mostre della stessa galleria di fila
+const PRIMI = new Set();
 function alterna(mostre) {
   const gruppi = new Map();
   for (const m of mostre) { if (!gruppi.has(m.id)) gruppi.set(m.id, []); gruppi.get(m.id).push(m); }
   const liste = [...gruppi.values()].sort((a, b) => (b[0].dal || '').localeCompare(a[0].dal || ''));
+  // gallerie con "primo": true in gallerie.json vanno in testa (prima nel mosaico, in alto a sinistra)
+  liste.sort((a, b) => (PRIMI.has(b[0].id) ? 1 : 0) - (PRIMI.has(a[0].id) ? 1 : 0));
   const out = [];
   while (liste.some(l => l.length)) for (const l of liste) if (l.length) out.push(l.shift());
   return out;
@@ -49,6 +52,7 @@ function alterna(mostre) {
 
 async function main() {
   const conf = leggiJSON(path.join(QUI, 'gallerie.json'), { gallerie: [] }).gallerie;
+  conf.filter(g => g.primo).forEach(g => PRIMI.add(g.id));
   const solo = process.argv.slice(2);
   const scelte = conf.filter(g => g.pagina && (!solo.length || solo.includes(g.id)));
   const precedente = leggiJSON(USCITA, { mostre: [] });
@@ -57,6 +61,8 @@ async function main() {
   const loghi = {}; // id galleria → logo
   // loghi dell'ultimo giro: servono se un sito oggi non si legge
   for (const m of precedente.mostre || []) if (m.logo && !loghi[m.id]) loghi[m.id] = { url: m.logo, chiaro: !!m.logoChiaro };
+  // loghi indicati a mano in gallerie.json: valgono anche se il sito della galleria blocca il programma
+  for (const g of conf) if (g.logo && g.logo !== 'nessuno' && /^https:\/\//.test(g.logo)) loghi[g.id] = { url: g.logo, chiaro: !!g.logoNero };
 
   // massimo 3 gallerie alla volta, per non pesare sui loro server
   const coda = scelte.slice();

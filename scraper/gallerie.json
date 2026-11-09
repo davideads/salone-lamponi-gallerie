@@ -8,13 +8,14 @@
       "pagina": "https://massimodecarlo.com/galleries/milano",
       "link": "/exhibitions/[^/?]+$"
     },
-        {
+    {
       "id": "gracis",
       "nome": "Galleria Gracis",
       "sito": "https://www.galleriagracis.com",
       "pagina": "https://www.galleriagracis.com/it/mostre/",
       "link": "/it/mostre/[^/#]+/?$",
-      "maxSchede": 4
+      "maxSchede": 4,
+      "primo": true
     },
     {
       "id": "liarumma",
@@ -45,7 +46,8 @@
       "pagina": "https://kaufmannrepetto.com/",
       "link": "/exhibition/[^/]+/?$",
       "altreCitta": "New York",
-      "_nota": "Il sito blocca i programmi automatici con una pagina di verifica: se il lettore non riesce, usa manuali.json."
+      "_nota": "Il sito blocca i programmi automatici con una pagina di verifica: se il lettore non riesce, usa manuali.json.",
+      "logo": "https://kaufmannrepetto.com/app/themes/kaufmannrepetto-theme/dist/images/logo_hd-resized.png"
     },
     {
       "id": "raffaellacortese",
@@ -315,7 +317,8 @@
       "pagina": "https://www.fondazioneprada.org/",
       "link": "/project/[^/]+/?$",
       "richiedi": "\\bmostra\\b",
-      "cittaInElenco": true
+      "cittaInElenco": true,
+      "logo": "https://www.fondazioneprada.org/wp-content/themes/roots/assets/img/fondazione_prada.svg"
     },
     {
       "id": "hangarbicocca",
@@ -452,26 +455,6 @@
       "tutteInCorso": true,
       "dataSingola": false,
       "_nota": "il sito non mostra le date: viene presa la mostra più recente"
-    },
-        {
-      "id": "kaufmannrepetto",
-      "nome": "kaufmann repetto",
-      "sito": "https://kaufmannrepetto.com",
-      "pagina": "https://kaufmannrepetto.com/",
-      "link": "/exhibition/[^/]+/?$",
-      "altreCitta": "New York",
-      "_nota": "Il sito blocca i programmi automatici con una pagina di verifica: se il lettore non riesce, usa manuali.json.",
-      "logo": "https://kaufmannrepetto.com/app/themes/kaufmannrepetto-theme/dist/images/logo_hd-resized.png"
-    },
-      {
-      "id": "fondazioneprada",
-      "nome": "Fondazione Prada",
-      "sito": "https://www.fondazioneprada.org",
-      "pagina": "https://www.fondazioneprada.org/",
-      "link": "/project/[^/]+/?$",
-      "richiedi": "\\bmostra\\b",
-      "cittaInElenco": true,
-      "logo": "https://www.fondazioneprada.org/wp-content/themes/roots/assets/img/fondazione_prada.svg"
     },
     {
       "id": "sozzani",

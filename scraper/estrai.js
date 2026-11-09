@@ -257,6 +257,7 @@
      Cercato nell'intestazione del sito: immagine o SVG con "logo" nel nome, oppure dentro il link alla home.
      In gallerie.json si può indicare a mano: "logo": "https://..." (o "nessuno"), "logoNero": true per i loghi bianchi. */
   const RE_LOGO = /logo|brand|marchio/i;
+  const RE_LOGO_FILE = /(^|[^a-z])(logo|brand|marchio)/i; // nel nome del file: "catalogo" non vale
   const RE_NON_LOGO = /sponsor|partner|social|instagram|facebook|twitter|whatsapp|newsletter|payoff|hamburger|loader|search|cerca|arrow|freccia|close|chiudi/i;
   const RE_CHIARO = /white|bianc|negativ|light|inverse|_w\.|-w\./i;
   function firma(el) {
@@ -292,12 +293,16 @@
       if (!img && n.parentNode && n.parentNode.closest && n.parentNode.closest('svg')) return;
       const src = img ? immagineDa(n, base) : null;
       if (img && !src) return;
-      const qui = firma(n) + ' ' + (src || '').split('/').pop();
-      if (RE_NON_LOGO.test(qui)) return;
+      const file = (src || '').split('?')[0].split('/').pop();
+      const qui = firma(n) + ' ' + file;
+      if (RE_NON_LOGO.test(qui + ' ' + (src || '').split('?')[0])) return; // anche nel percorso (es. /sponsor/)
+      // le foto (jpg, webp) sono accettate solo se il nome del file dice che sono un logo: mai immagini di opere
+      if (img && /\.(jpe?g|webp|avif)$/i.test(file) && !RE_LOGO_FILE.test(file)) return;
+      if (img && (n.getAttribute('alt') || '').length > 80) return; // didascalie lunghe = foto di mostre
       let su = '';
       for (let g = n.parentNode, k = 0; g && g.getAttribute && k < 4; g = g.parentNode, k++) su += ' ' + firma(g);
       let p = 0;
-      if (RE_LOGO.test(qui)) p += 6;
+      if (RE_LOGO.test(firma(n)) || RE_LOGO_FILE.test(file)) p += 6;
       if (RE_LOGO.test(su)) p += 4;
       const a = n.closest && n.closest('a');
       if (a && eHome(a.getAttribute('href'), base)) p += 4;

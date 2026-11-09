@@ -8,5 +8,30 @@
     "dal": "2026-11-10",
     "al": "2027-01-15"
   },
-  "mostre": []
+  "mostre": [
+    {
+      "galleria": "Fondazione Prada",
+      "id": "fondazioneprada",
+      "titolo": "Global Antiquity",
+      "link": "https://www.fondazioneprada.org/project/global-antiquity/",
+      "dal": "2026-11-05",
+      "al": "2027-03-01"
+    },
+    {
+      "galleria": "Fondazione Prada",
+      "id": "fondazioneprada",
+      "titolo": "Cyprien Gaillard — Tutti zitti (Osservatorio)",
+      "link": "https://www.fondazioneprada.org/project/cyprien-gaillard/",
+      "dal": "2026-12-03",
+      "al": "2027-10-04"
+    },
+    {
+      "galleria": "kaufmann repetto",
+      "id": "kaufmannrepetto",
+      "titolo": "Diambe",
+      "link": "https://kaufmannrepetto.com/upcoming-exhibitions/",
+      "dal": "2026-11-11",
+      "al": null
+    }
+  ]
 }

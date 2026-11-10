@@ -1,6 +1,6 @@
 {
-  "aggiornato": "2026-11-10T06:15:13.519Z",
-  "totale": 31,
+  "aggiornato": "2026-11-10T09:58:19.796Z",
+  "totale": 32,
   "mostre": [
     {
       "galleria": "Galleria Gracis",
@@ -61,6 +61,16 @@
       "al": "2027-01-22",
       "logo": "https://www.marcorossiartecontemporanea.com/wp-content/uploads/2021/03/Raggruppa-501-e1615807468179.png",
       "sito": "https://www.marcorossiartecontemporanea.com"
+    },
+    {
+      "galleria": "Art Gallery Finestreria",
+      "id": "finestreria",
+      "titolo": "Giorgia Oldano",
+      "link": "https://artgalleryfinestreria.net/eventi/giorgia-oldano-mostra-personale",
+      "dal": "2026-11-04",
+      "al": "2026-11-24",
+      "logo": "https://artgalleryfinestreria.net/media/logo-finestreria.png",
+      "sito": "https://artgalleryfinestreria.net"
     },
     {
       "galleria": "ICA Milano",
@@ -349,6 +359,16 @@
       ]
     },
     {
+      "galleria": "Art Gallery Finestreria",
+      "esito": "ok",
+      "mostre": 1,
+      "logo": "https://artgalleryfinestreria.net/media/logo-finestreria.png",
+      "note": [
+        "link trovati: 2",
+        "schede lette: 1, mostre in corso: 1"
+      ]
+    },
+    {
       "galleria": "ArtNoble Gallery",
       "esito": "ok",
       "mostre": 1,
@@ -601,12 +621,11 @@
     },
     {
       "galleria": "Galleria Poggiali",
-      "esito": "ok",
+      "esito": "errore",
       "mostre": 0,
-      "logo": "https://www.galleriapoggiali.com/assets/img/Galleria%20Poggiali.png",
+      "logo": "non trovato",
       "note": [
-        "link trovati: 28",
-        "schede lette: 0, mostre in corso: 0"
+        "fetch failed"
       ]
     },
     {

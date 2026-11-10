@@ -453,6 +453,16 @@
       "dataSingola": false,
       "_nota": "il sito non mostra le date: viene presa la mostra più recente"
     },
+        {
+      "id": "finestreria",
+      "nome": "Art Gallery Finestreria",
+      "sito": "https://artgalleryfinestreria.net",
+      "pagina": "https://artgalleryfinestreria.net/",
+      "logo": "https://artgalleryfinestreria.net/media/logo-finestreria.png",
+      "link": "/eventi/[^/]+/?$",
+      "escludi": "art-verona|fiera|fair|miart|artissima",
+      "soloDateElenco": true
+    },
     {
       "id": "sozzani",
       "nome": "Fondazione Sozzani",

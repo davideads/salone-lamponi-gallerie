@@ -1,6 +1,6 @@
 {
-  "aggiornato": "2026-11-09T17:55:44.340Z",
-  "totale": 33,
+  "aggiornato": "2026-11-10T06:15:13.519Z",
+  "totale": 31,
   "mostre": [
     {
       "galleria": "Galleria Gracis",
@@ -184,16 +184,6 @@
       "sito": "https://www.aarteinvernizzi.it"
     },
     {
-      "galleria": "Colombo's Gallery",
-      "id": "colombo",
-      "titolo": "108 — GranTour",
-      "link": "https://colomboarte.com/108-grantour/",
-      "dal": "2026-09-24",
-      "al": "2026-11-09",
-      "logo": "https://www.salonelamponi.it/assets/img/loghi%20gallerie/GALLERY_COLOMBO.png",
-      "sito": "https://colomboarte.com"
-    },
-    {
       "galleria": "M77 Gallery",
       "id": "m77",
       "titolo": "William Klein. My cities",
@@ -305,16 +295,6 @@
       "al": "2027-02-27",
       "logo": "https://www.salonelamponi.it/assets/img/loghi%20gallerie/logo%20giomarconi.png",
       "sito": "https://giomarconi.com"
-    },
-    {
-      "galleria": "Colombo's Gallery",
-      "id": "colombo",
-      "titolo": "Bertrand Loubé — The Cut-Outs",
-      "link": "https://colomboarte.com/bertrand-loube-the-cut-outs/",
-      "dal": "2026-09-24",
-      "al": "2026-11-09",
-      "logo": "https://www.salonelamponi.it/assets/img/loghi%20gallerie/GALLERY_COLOMBO.png",
-      "sito": "https://colomboarte.com"
     },
     {
       "galleria": "Pirelli HangarBicocca",
@@ -463,11 +443,11 @@
     {
       "galleria": "Colombo's Gallery",
       "esito": "ok",
-      "mostre": 2,
+      "mostre": 0,
       "logo": "https://www.salonelamponi.it/assets/img/loghi%20gallerie/GALLERY_COLOMBO.png",
       "note": [
         "link trovati: 174",
-        "schede lette: 6, mostre in corso: 2"
+        "schede lette: 6, mostre in corso: 0"
       ]
     },
     {
@@ -585,7 +565,7 @@
       "mostre": 1,
       "logo": "https://www.galleriagiovannibonelli.com/wp-content/uploads/2020/04/logo-b.png",
       "note": [
-        "scartata (non a Milano): https://www.galleriagiovannibonelli.com/mostra/piazza-duomo-i-occasioni-dincontrotributo-a-piero-cavellini/",
+        "link trovati: 75",
         "scartata (non a Milano): https://www.galleriagiovannibonelli.com/mostra/polvere-e-respiri-i-pietrasanta-2025/",
         "schede lette: 10, mostre in corso: 1"
       ]
@@ -705,9 +685,8 @@
       "mostre": 1,
       "logo": "https://www.m77gallery.com/wp-content/uploads/2021/07/LOGO_M77_new.png",
       "note": [
-        "scheda non letta https://www.m77gallery.com/exhibitions/john-lurie-home-not-place-something-else/: HTTP 500",
-        "scheda non letta https://www.m77gallery.com/exhibitions/santi-moix-brooklyn-studio/: HTTP 500",
-        "schede lette: 2, mostre in corso: 1"
+        "link trovati: 34",
+        "schede lette: 10, mostre in corso: 1"
       ]
     },
     {

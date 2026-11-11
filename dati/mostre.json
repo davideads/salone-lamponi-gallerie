@@ -1,6 +1,6 @@
 {
-  "aggiornato": "2026-11-10T09:58:19.796Z",
-  "totale": 32,
+  "aggiornato": "2026-11-11T06:19:16.180Z",
+  "totale": 34,
   "mostre": [
     {
       "galleria": "Galleria Gracis",
@@ -11,6 +11,27 @@
       "al": "2026-12-23",
       "logo": "https://www.galleriagracis.com/wp-content/uploads/2019/04/gracis_logo.png",
       "sito": "https://www.galleriagracis.com"
+    },
+    {
+      "galleria": "Francesca Minini",
+      "id": "francescaminini",
+      "titolo": "Radioso Futuro",
+      "link": "https://www.francescaminini.it/exhibition/radioso-futuro/",
+      "dal": "2026-11-11",
+      "al": "2026-11-12",
+      "logo": "https://www.francescaminini.it/wp-content/uploads/2022/04/cropped-FaviconFrancescaMinini-192x192.png",
+      "logoIcona": true,
+      "sito": "https://www.francescaminini.it"
+    },
+    {
+      "galleria": "kaufmann repetto",
+      "id": "kaufmannrepetto",
+      "titolo": "Diambe",
+      "link": "https://kaufmannrepetto.com/upcoming-exhibitions/",
+      "dal": "2026-11-11",
+      "al": null,
+      "logo": "https://kaufmannrepetto.com/app/themes/kaufmannrepetto-theme/dist/images/logo_hd-resized.png",
+      "manuale": true
     },
     {
       "galleria": "Lia Rumma",
@@ -405,7 +426,7 @@
       "mostre": 1,
       "logo": "https://cardigallery.com/wp-content/uploads/favicon.png (icona del sito)",
       "note": [
-        "link trovati: 179",
+        "link trovati: 180",
         "schede lette: 1, mostre in corso: 1"
       ]
     },
@@ -552,11 +573,11 @@
     {
       "galleria": "Francesca Minini",
       "esito": "ok",
-      "mostre": 0,
+      "mostre": 1,
       "logo": "https://www.francescaminini.it/wp-content/uploads/2022/04/cropped-FaviconFrancescaMinini-192x192.png (icona del sito)",
       "note": [
         "link trovati: 101",
-        "schede lette: 0, mostre in corso: 0"
+        "schede lette: 1, mostre in corso: 1"
       ]
     },
     {
@@ -621,11 +642,12 @@
     },
     {
       "galleria": "Galleria Poggiali",
-      "esito": "errore",
+      "esito": "ok",
       "mostre": 0,
-      "logo": "non trovato",
+      "logo": "https://www.galleriapoggiali.com/assets/img/Galleria%20Poggiali.png",
       "note": [
-        "fetch failed"
+        "link trovati: 28",
+        "schede lette: 0, mostre in corso: 0"
       ]
     },
     {
@@ -801,11 +823,12 @@
     },
     {
       "galleria": "Ribot",
-      "esito": "errore",
+      "esito": "ok",
       "mostre": 0,
-      "logo": "non trovato",
+      "logo": "https://www.ribotgallery.com/wp-content/uploads/2022/03/cropped-cropped-Ribot_logo-pos-neg-2-2-1.png",
       "note": [
-        "fetch failed"
+        "link trovati: 49",
+        "schede lette: 2, mostre in corso: 0"
       ]
     },
     {
@@ -824,7 +847,7 @@
       "mostre": 1,
       "logo": "SVG dalla pagina",
       "note": [
-        "link trovati: 9",
+        "link trovati: 10",
         "schede lette: 1, mostre in corso: 1"
       ]
     },

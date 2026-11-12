@@ -1,6 +1,6 @@
 {
-  "aggiornato": "2026-11-11T11:56:45.845Z",
-  "totale": 33,
+  "aggiornato": "2026-11-12T06:23:15.552Z",
+  "totale": 35,
   "mostre": [
     {
       "galleria": "Galleria Gracis",
@@ -11,6 +11,27 @@
       "al": "2026-12-23",
       "logo": "https://www.galleriagracis.com/wp-content/uploads/2019/04/gracis_logo.png",
       "sito": "https://www.galleriagracis.com"
+    },
+    {
+      "galleria": "Mimmo Scognamiglio",
+      "id": "mimmoscognamiglio",
+      "titolo": "The Last Supper — Overview",
+      "link": "https://mimmoscognamiglio.com/exhibitions/45-the-last-supper-gavin-turk/overview/",
+      "dal": "2026-11-12",
+      "al": "2027-01-15",
+      "logo": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2228/usr/images/preferences/logo-new.png",
+      "sito": "https://mimmoscognamiglio.com"
+    },
+    {
+      "galleria": "Francesca Minini",
+      "id": "francescaminini",
+      "titolo": "Radioso Futuro",
+      "link": "https://www.francescaminini.it/exhibition/radioso-futuro/",
+      "dal": "2026-11-12",
+      "al": "2027-01-16",
+      "logo": "https://www.francescaminini.it/wp-content/uploads/2022/04/cropped-FaviconFrancescaMinini-192x192.png",
+      "logoIcona": true,
+      "sito": "https://www.francescaminini.it"
     },
     {
       "galleria": "kaufmann repetto",
@@ -507,7 +528,8 @@
       "logo": "SVG dalla pagina",
       "note": [
         "link trovati: 4",
-        "schede lette: 2, mostre in corso: 2"
+        "scartata (non a Milano): https://fondazioneelpis.org/exhibitions/se-ascolti-tutto-risponde",
+        "schede lette: 3, mostre in corso: 2"
       ]
     },
     {
@@ -562,11 +584,11 @@
     {
       "galleria": "Francesca Minini",
       "esito": "ok",
-      "mostre": 0,
+      "mostre": 1,
       "logo": "https://www.francescaminini.it/wp-content/uploads/2022/04/cropped-FaviconFrancescaMinini-192x192.png (icona del sito)",
       "note": [
         "link trovati: 101",
-        "schede lette: 0, mostre in corso: 0"
+        "schede lette: 1, mostre in corso: 1"
       ]
     },
     {
@@ -752,11 +774,11 @@
     {
       "galleria": "Mimmo Scognamiglio",
       "esito": "ok",
-      "mostre": 0,
+      "mostre": 1,
       "logo": "https://static-assets.artlogic.net/c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2228/usr/images/preferences/logo-new.png",
       "note": [
         "link trovati: 39",
-        "schede lette: 0, mostre in corso: 0"
+        "schede lette: 1, mostre in corso: 1"
       ]
     },
     {

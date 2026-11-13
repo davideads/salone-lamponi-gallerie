@@ -1,6 +1,6 @@
 {
-  "aggiornato": "2026-11-12T06:23:15.552Z",
-  "totale": 35,
+  "aggiornato": "2026-11-13T06:21:48.264Z",
+  "totale": 34,
   "mostre": [
     {
       "galleria": "Galleria Gracis",
@@ -287,17 +287,6 @@
       "sito": "https://www.depart.it"
     },
     {
-      "galleria": "Christian Stein",
-      "id": "christianstein",
-      "titolo": "GIULIO PAOLINI — IN STUDIO (ORA COME ALLORA)",
-      "link": "https://www.galleriachristianstein.it/giulio-paolini-2026",
-      "dal": null,
-      "al": null,
-      "logo": "https://static.wixstatic.com/media/6c3429_1bb7b107e62e4589ab02d69c2a1f6082%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/6c3429_1bb7b107e62e4589ab02d69c2a1f6082%7Emv2.png",
-      "logoIcona": true,
-      "sito": "https://www.galleriachristianstein.it"
-    },
-    {
       "galleria": "ICA Milano",
       "id": "icamilano",
       "titolo": "Leonardo Devito. L'Addio",
@@ -463,11 +452,11 @@
     {
       "galleria": "Christian Stein",
       "esito": "ok",
-      "mostre": 1,
+      "mostre": 0,
       "logo": "https://static.wixstatic.com/media/6c3429_1bb7b107e62e4589ab02d69c2a1f6082%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/6c3429_1bb7b107e62e4589ab02d69c2a1f6082%7Emv2.png (icona del sito)",
       "note": [
         "link trovati: 1",
-        "schede lette: 1, mostre in corso: 1"
+        "schede lette: 0, mostre in corso: 0"
       ]
     },
     {
@@ -603,12 +592,11 @@
     },
     {
       "galleria": "Galleria Fumagalli",
-      "esito": "ok",
+      "esito": "errore",
       "mostre": 0,
-      "logo": "https://galleriafumagalli.com/wp-content/uploads/2019/01/logo-galleria-fumagalli.png",
+      "logo": "non trovato",
       "note": [
-        "link trovati: 98",
-        "schede lette: 1, mostre in corso: 0"
+        "HTTP 503"
       ]
     },
     {
@@ -638,7 +626,9 @@
       "mostre": 0,
       "logo": "non trovato",
       "note": [
-        "fetch failed"
+        "link trovati: 0",
+        "schede lette: 0, mostre in corso: 0",
+        "nessun link trovato nella pagina elenco"
       ]
     },
     {
@@ -757,8 +747,8 @@
       "mostre": 0,
       "logo": "https://martinasimeti.com/wp-content/uploads/2020/07/cropped-MS_simeti2-192x192.jpg (icona del sito)",
       "note": [
-        "link trovati: 34",
-        "schede lette: 3, mostre in corso: 0"
+        "link trovati: 35",
+        "schede lette: 4, mostre in corso: 0"
       ]
     },
     {
@@ -834,11 +824,12 @@
     },
     {
       "galleria": "Ribot",
-      "esito": "errore",
+      "esito": "ok",
       "mostre": 0,
-      "logo": "non trovato",
+      "logo": "https://www.ribotgallery.com/wp-content/uploads/2022/03/cropped-cropped-Ribot_logo-pos-neg-2-2-1.png",
       "note": [
-        "fetch failed"
+        "link trovati: 49",
+        "schede lette: 2, mostre in corso: 0"
       ]
     },
     {

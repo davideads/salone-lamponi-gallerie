@@ -1,6 +1,6 @@
 {
-  "aggiornato": "2026-11-13T06:21:48.264Z",
-  "totale": 34,
+  "aggiornato": "2026-11-14T06:09:16.837Z",
+  "totale": 33,
   "mostre": [
     {
       "galleria": "Galleria Gracis",
@@ -254,17 +254,6 @@
       "al": "2027-01-17",
       "logo": "https://www.salonelamponi.it/assets/img/loghi%20gallerie/Pirelli-HangarBicocca.jpg",
       "sito": "https://pirellihangarbicocca.org"
-    },
-    {
-      "galleria": "Osart Gallery",
-      "id": "osart",
-      "titolo": "Principia — Vincenzo Agnetti",
-      "link": "https://www.osartgallery.com/principia-vincenzo-agnetti",
-      "dal": "2026-09-17",
-      "al": "2026-11-13",
-      "logo": "https://static.wixstatic.com/media/163085_6335c8fb10fb4ce48ecc433ee1c3ceec%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/163085_6335c8fb10fb4ce48ecc433ee1c3ceec%7Emv2.png",
-      "logoIcona": true,
-      "sito": "https://www.osartgallery.com"
     },
     {
       "galleria": "Thaddaeus Ropac",
@@ -562,12 +551,11 @@
     },
     {
       "galleria": "Fondazione Sozzani",
-      "esito": "ok",
+      "esito": "errore",
       "mostre": 0,
-      "logo": "https://fondazionesozzani.org/wp-content/uploads/2021/10/logospesso.png",
+      "logo": "non trovato",
       "note": [
-        "link trovati: 1",
-        "schede lette: 1, mostre in corso: 0"
+        "This operation was aborted"
       ]
     },
     {
@@ -592,11 +580,12 @@
     },
     {
       "galleria": "Galleria Fumagalli",
-      "esito": "errore",
+      "esito": "ok",
       "mostre": 0,
-      "logo": "non trovato",
+      "logo": "https://galleriafumagalli.com/wp-content/uploads/2019/01/logo-galleria-fumagalli.png",
       "note": [
-        "HTTP 503"
+        "link trovati: 98",
+        "schede lette: 1, mostre in corso: 0"
       ]
     },
     {
@@ -626,9 +615,7 @@
       "mostre": 0,
       "logo": "non trovato",
       "note": [
-        "link trovati: 0",
-        "schede lette: 0, mostre in corso: 0",
-        "nessun link trovato nella pagina elenco"
+        "fetch failed"
       ]
     },
     {
@@ -723,12 +710,12 @@
     },
     {
       "galleria": "M77 Gallery",
-      "esito": "ok",
+      "esito": "errore",
       "mostre": 1,
       "logo": "https://www.m77gallery.com/wp-content/uploads/2021/07/LOGO_M77_new.png",
       "note": [
-        "link trovati: 34",
-        "schede lette: 10, mostre in corso: 1"
+        "This operation was aborted",
+        "tenute 1 mostre dall'aggiornamento precedente"
       ]
     },
     {
@@ -784,11 +771,11 @@
     {
       "galleria": "Osart Gallery",
       "esito": "ok",
-      "mostre": 1,
+      "mostre": 0,
       "logo": "https://static.wixstatic.com/media/163085_6335c8fb10fb4ce48ecc433ee1c3ceec%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/163085_6335c8fb10fb4ce48ecc433ee1c3ceec%7Emv2.png (icona del sito)",
       "note": [
         "link trovati: 43",
-        "schede lette: 1, mostre in corso: 1"
+        "schede lette: 0, mostre in corso: 0"
       ]
     },
     {

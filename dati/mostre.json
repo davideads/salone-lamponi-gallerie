@@ -1,6 +1,6 @@
 {
-  "aggiornato": "2026-11-15T13:44:08.659Z",
-  "totale": 30,
+  "aggiornato": "2026-11-15T14:07:09.611Z",
+  "totale": 31,
   "mostre": [
     {
       "galleria": "Galleria Gracis",
@@ -42,6 +42,16 @@
       "al": null,
       "logo": "https://www.salonelamponi.it/assets/img/loghi gallerie/KR-logo-1000-px.jpg",
       "manuale": true
+    },
+    {
+      "galleria": "Luca Tommasi",
+      "id": "lucatommasi",
+      "titolo": "Luca Tommasi",
+      "link": "https://www.lucatommasi.it/exhibition/69",
+      "dal": "2026-11-07",
+      "al": "2026-11-30",
+      "logo": "https://www.lucatommasi.it/assets/img/LTArteCont.png",
+      "sito": "https://www.lucatommasi.it"
     },
     {
       "galleria": "Lia Rumma",
@@ -357,6 +367,16 @@
       ]
     },
     {
+      "galleria": "Banquet",
+      "esito": "ok",
+      "mostre": 0,
+      "logo": "https://banquetgallery.com/wp-content/uploads/2026/06/logo-bianco-png.png",
+      "note": [
+        "link trovati: 4",
+        "schede lette: 0, mostre in corso: 0"
+      ]
+    },
+    {
       "galleria": "BUILDING",
       "esito": "ok",
       "mostre": 3,
@@ -431,9 +451,11 @@
       "galleria": "Ciaccia Levi",
       "esito": "errore",
       "mostre": 0,
-      "logo": "non trovato",
+      "logo": "https://www.ciaccialevi.com/assets/favicon/apple-touch-icon.png (icona del sito)",
       "note": [
-        "fetch failed"
+        "link trovati: 0",
+        "schede lette: 0, mostre in corso: 0",
+        "nessun link trovato nella pagina elenco"
       ]
     },
     {
@@ -457,6 +479,16 @@
       ]
     },
     {
+      "galleria": "Cortesi Gallery",
+      "esito": "ok",
+      "mostre": 0,
+      "logo": "https://cortesigallery.com/wp-content/uploads/sites/34/2022/07/cortesi-gallery-logo_centrato-copy.jpg",
+      "note": [
+        "link trovati: 8",
+        "schede lette: 0, mostre in corso: 0"
+      ]
+    },
+    {
       "galleria": "Dep Art Gallery",
       "esito": "ok",
       "mostre": 1,
@@ -467,13 +499,22 @@
       ]
     },
     {
-      "galleria": "Federico Vavassori",
+      "galleria": "Fabbrica Eos",
       "esito": "ok",
+      "mostre": 0,
+      "logo": "https://www.fabbricaeos.it/wp-content/uploads/2016/01/Logo1.png",
+      "note": [
+        "link trovati: 62",
+        "schede lette: 3, mostre in corso: 0"
+      ]
+    },
+    {
+      "galleria": "Federico Vavassori",
+      "esito": "errore",
       "mostre": 0,
       "logo": "non trovato",
       "note": [
-        "link trovati: 72",
-        "schede lette: 2, mostre in corso: 0"
+        "fetch failed"
       ]
     },
     {
@@ -648,6 +689,16 @@
       ]
     },
     {
+      "galleria": "Glenda Cinquegrana Art Consulting",
+      "esito": "ok",
+      "mostre": 0,
+      "logo": "https://www.glendacinquegrana.com/wp-content/uploads/2019/10/logo_glendacinquegrana_2019_trimmed_transparent_180px.png",
+      "note": [
+        "link trovati: 8",
+        "schede lette: 5, mostre in corso: 0"
+      ]
+    },
+    {
       "galleria": "ICA Milano",
       "esito": "ok",
       "mostre": 2,
@@ -687,6 +738,16 @@
       ]
     },
     {
+      "galleria": "Luca Tommasi",
+      "esito": "ok",
+      "mostre": 1,
+      "logo": "https://www.lucatommasi.it/assets/img/LTArteCont.png",
+      "note": [
+        "link trovati: 67",
+        "schede lette: 1, mostre in corso: 1"
+      ]
+    },
+    {
       "galleria": "M77 Gallery",
       "esito": "ok",
       "mostre": 0,
@@ -694,6 +755,26 @@
       "note": [
         "link trovati: 34",
         "schede lette: 10, mostre in corso: 0"
+      ]
+    },
+    {
+      "galleria": "MA-EC Gallery",
+      "esito": "ok",
+      "mostre": 0,
+      "logo": "https://static.wixstatic.com/media/f21b01_77ad46b2bb9a470e9a061828db072e20~mv2.png/v1/fill/w_448,h_186,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%E7%B1%B3%E5%85%B0%E5%9B%BD%E9%99%85%E8%89%BA%E6%9C%AF%E4%B8%AD%E5%BF%83LOgo-3.png",
+      "note": [
+        "link trovati: 2",
+        "schede lette: 1, mostre in corso: 0"
+      ]
+    },
+    {
+      "galleria": "MAAB + Nina Due",
+      "esito": "ok",
+      "mostre": 0,
+      "logo": "https://www.maabgallery.com/wp-content/uploads/2026/03/mn-1-scaled.png",
+      "note": [
+        "link trovati: 1",
+        "schede lette: 0, mostre in corso: 0"
       ]
     },
     {
@@ -789,12 +870,11 @@
     },
     {
       "galleria": "Ribot",
-      "esito": "ok",
+      "esito": "errore",
       "mostre": 0,
-      "logo": "https://www.ribotgallery.com/wp-content/uploads/2022/03/cropped-cropped-Ribot_logo-pos-neg-2-2-1.png",
+      "logo": "non trovato",
       "note": [
-        "link trovati: 49",
-        "schede lette: 2, mostre in corso: 0"
+        "fetch failed"
       ]
     },
     {

@@ -473,6 +473,71 @@
       "escludi": "arte-in-nuvola|fiera|fair|miart|artissima|art-verona|artefiera",
       "soloDateElenco": true
     },
+        {
+      "id": "banquet",
+      "nome": "Banquet",
+      "sito": "https://banquetgallery.com",
+      "pagina": "https://banquetgallery.com/",
+      "link": "banquetgallery\\.com/[a-z0-9-]{4,}/?(#[a-z]*)?$",
+      "escludi": "/(artists|exhibitions|news|info|basket|shop|terms-and-conditions|product)(/|$)",
+      "soloDateElenco": true
+    },
+    {
+      "id": "cortesi",
+      "nome": "Cortesi Gallery",
+      "sito": "https://cortesigallery.com",
+      "pagina": "https://cortesigallery.com/exhibitions-page/",
+      "link": "/exhibitions/[^/]+/?$",
+      "altreCitta": "Lugano",
+      "cittaInElenco": true,
+      "soloDateElenco": true,
+      "maxSchede": 4
+    },
+    {
+      "id": "glendacinquegrana",
+      "nome": "Glenda Cinquegrana Art Consulting",
+      "sito": "https://www.glendacinquegrana.com",
+      "pagina": "https://www.glendacinquegrana.com/updates/",
+      "link": "/20\\d\\d/\\d\\d/[^/]+/?$",
+      "escludi": "paris-photo|fair|fiera|ovr|online|artsy|miart|artissima|festival",
+      "maxSchede": 5
+    },
+    {
+      "id": "maab",
+      "nome": "MAAB + Nina Due",
+      "sito": "https://www.maabgallery.com",
+      "pagina": "https://www.maabgallery.com/in-corso/",
+      "link": "maabgallery\\.com/[a-z0-9-]{4,}/?$",
+      "escludi": "/(mostre|in-corso|passate|artisti|fiere|news|contatti|privacy-policy-ita|privacy-policy-eng)/?$",
+      "soloDateElenco": true
+    },
+    {
+      "id": "fabbricaeos",
+      "nome": "Fabbrica Eos",
+      "sito": "https://www.fabbricaeos.it",
+      "pagina": "https://www.fabbricaeos.it/mostre/",
+      "link": "/fabbrica_eos/[^/]+/?$",
+      "maxSchede": 3,
+      "_nota": "la pagina Mostre è ferma al 2023: le novità sono solo su Instagram"
+    },
+    {
+      "id": "lucatommasi",
+      "nome": "Luca Tommasi",
+      "sito": "https://www.lucatommasi.it",
+      "pagina": "https://www.lucatommasi.it/exhibitions",
+      "link": "/exhibition/\\d+$",
+      "soloDateElenco": true,
+      "maxSchede": 4
+    },
+    {
+      "id": "maec",
+      "nome": "MA-EC Gallery",
+      "sito": "https://www.ma-ec.it",
+      "pagina": "https://www.ma-ec.it/blog",
+      "link": "/post/[^/?]+$",
+      "escludi": "west-bund|shanghai|artverona|art-fair|fiera|miart|artissima",
+      "maxSchede": 6
+    },
     {
       "id": "sozzani",
       "nome": "Fondazione Sozzani",

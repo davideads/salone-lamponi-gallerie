@@ -464,6 +464,16 @@
       "soloDateElenco": true
     },
     {
+      "id": "camillaprini",
+      "nome": "Camilla Prini Gallery",
+      "sito": "https://www.camillaprini.com",
+      "pagina": "https://www.camillaprini.com/",
+      "logo": "https://static.wixstatic.com/media/c818b9_cdeebe9cffbd437eb87b279a84b2a8e8~mv2.png",
+      "link": "/mostre/[^/]+$",
+      "escludi": "arte-in-nuvola|fiera|fair|miart|artissima|art-verona|artefiera",
+      "soloDateElenco": true
+    },
+    {
       "id": "sozzani",
       "nome": "Fondazione Sozzani",
       "sito": "https://fondazionesozzani.org",

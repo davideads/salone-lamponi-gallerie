@@ -1,6 +1,6 @@
 {
-  "aggiornato": "2026-11-15T06:12:18.666Z",
-  "totale": 29,
+  "aggiornato": "2026-11-15T13:44:08.659Z",
+  "totale": 30,
   "mostre": [
     {
       "galleria": "Galleria Gracis",
@@ -102,6 +102,16 @@
       "al": "2026-11-24",
       "logo": "https://artgalleryfinestreria.net/media/logo-finestreria.png",
       "sito": "https://artgalleryfinestreria.net"
+    },
+    {
+      "galleria": "Camilla Prini Gallery",
+      "id": "camillaprini",
+      "titolo": "DI NOTTE, ANCORA — Arte in Salotto Brera",
+      "link": "https://www.camillaprini.com/mostre/di-notte-ancora",
+      "dal": "2026-11-04",
+      "al": "2027-01-15",
+      "logo": "https://static.wixstatic.com/media/c818b9_cdeebe9cffbd437eb87b279a84b2a8e8~mv2.png",
+      "sito": "https://www.camillaprini.com"
     },
     {
       "galleria": "ICA Milano",
@@ -368,6 +378,16 @@
       ]
     },
     {
+      "galleria": "Camilla Prini Gallery",
+      "esito": "ok",
+      "mostre": 1,
+      "logo": "https://static.wixstatic.com/media/c818b9_cdeebe9cffbd437eb87b279a84b2a8e8~mv2.png",
+      "note": [
+        "link trovati: 1",
+        "schede lette: 1, mostre in corso: 1"
+      ]
+    },
+    {
       "galleria": "Cardi Gallery",
       "esito": "ok",
       "mostre": 0,
@@ -409,12 +429,11 @@
     },
     {
       "galleria": "Ciaccia Levi",
-      "esito": "ok",
+      "esito": "errore",
       "mostre": 0,
-      "logo": "https://www.ciaccialevi.com/assets/favicon/apple-touch-icon.png (icona del sito)",
+      "logo": "non trovato",
       "note": [
-        "link trovati: 1",
-        "schede lette: 0, mostre in corso: 0"
+        "fetch failed"
       ]
     },
     {
@@ -770,11 +789,12 @@
     },
     {
       "galleria": "Ribot",
-      "esito": "errore",
+      "esito": "ok",
       "mostre": 0,
-      "logo": "non trovato",
+      "logo": "https://www.ribotgallery.com/wp-content/uploads/2022/03/cropped-cropped-Ribot_logo-pos-neg-2-2-1.png",
       "note": [
-        "fetch failed"
+        "link trovati: 49",
+        "schede lette: 2, mostre in corso: 0"
       ]
     },
     {
@@ -793,7 +813,7 @@
       "mostre": 0,
       "logo": "SVG dalla pagina",
       "note": [
-        "link trovati: 10",
+        "link trovati: 8",
         "schede lette: 0, mostre in corso: 0"
       ]
     },

@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-11-15T14:07:09.611Z",
+  "aggiornato": "2026-11-16T06:56:32.609Z",
   "totale": 31,
   "mostre": [
     {
@@ -104,16 +104,6 @@
       "sito": "https://www.marcorossiartecontemporanea.com"
     },
     {
-      "galleria": "Art Gallery Finestreria",
-      "id": "finestreria",
-      "titolo": "Giorgia Oldano",
-      "link": "https://artgalleryfinestreria.net/eventi/giorgia-oldano-mostra-personale",
-      "dal": "2026-11-04",
-      "al": "2026-11-24",
-      "logo": "https://artgalleryfinestreria.net/media/logo-finestreria.png",
-      "sito": "https://artgalleryfinestreria.net"
-    },
-    {
       "galleria": "Camilla Prini Gallery",
       "id": "camillaprini",
       "titolo": "DI NOTTE, ANCORA — Arte in Salotto Brera",
@@ -122,6 +112,16 @@
       "al": "2027-01-15",
       "logo": "https://static.wixstatic.com/media/c818b9_cdeebe9cffbd437eb87b279a84b2a8e8~mv2.png",
       "sito": "https://www.camillaprini.com"
+    },
+    {
+      "galleria": "Art Gallery Finestreria",
+      "id": "finestreria",
+      "titolo": "Giorgia Oldano",
+      "link": "https://artgalleryfinestreria.net/eventi/giorgia-oldano-mostra-personale",
+      "dal": "2026-11-04",
+      "al": "2026-11-24",
+      "logo": "https://artgalleryfinestreria.net/media/logo-finestreria.png",
+      "sito": "https://artgalleryfinestreria.net"
     },
     {
       "galleria": "ICA Milano",
@@ -510,11 +510,12 @@
     },
     {
       "galleria": "Federico Vavassori",
-      "esito": "errore",
+      "esito": "ok",
       "mostre": 0,
       "logo": "non trovato",
       "note": [
-        "fetch failed"
+        "link trovati: 72",
+        "schede lette: 2, mostre in corso: 0"
       ]
     },
     {
@@ -569,12 +570,11 @@
     },
     {
       "galleria": "Fondazione Sozzani",
-      "esito": "ok",
+      "esito": "errore",
       "mostre": 0,
-      "logo": "https://fondazionesozzani.org/wp-content/uploads/2021/10/logospesso.png",
+      "logo": "non trovato",
       "note": [
-        "link trovati: 1",
-        "schede lette: 1, mostre in corso: 0"
+        "fetch failed"
       ]
     },
     {

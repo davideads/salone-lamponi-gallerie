@@ -1,6 +1,6 @@
 {
-  "aggiornato": "2026-11-16T06:56:32.609Z",
-  "totale": 31,
+  "aggiornato": "2026-11-17T06:23:10.349Z",
+  "totale": 32,
   "mostre": [
     {
       "galleria": "Galleria Gracis",
@@ -11,6 +11,17 @@
       "al": "2026-12-23",
       "logo": "https://www.galleriagracis.com/wp-content/uploads/2019/04/gracis_logo.png",
       "sito": "https://www.galleriagracis.com"
+    },
+    {
+      "galleria": "Cardi Gallery",
+      "id": "cardi",
+      "titolo": "Agostino Bonalumi",
+      "link": "https://cardigallery.com/exhibitions/agostino-bonalumi-2/",
+      "dal": "2026-11-17",
+      "al": "2027-01-16",
+      "logo": "https://cardigallery.com/wp-content/uploads/favicon.png",
+      "logoIcona": true,
+      "sito": "https://cardigallery.com"
     },
     {
       "galleria": "Mimmo Scognamiglio",
@@ -104,16 +115,6 @@
       "sito": "https://www.marcorossiartecontemporanea.com"
     },
     {
-      "galleria": "Camilla Prini Gallery",
-      "id": "camillaprini",
-      "titolo": "DI NOTTE, ANCORA — Arte in Salotto Brera",
-      "link": "https://www.camillaprini.com/mostre/di-notte-ancora",
-      "dal": "2026-11-04",
-      "al": "2027-01-15",
-      "logo": "https://static.wixstatic.com/media/c818b9_cdeebe9cffbd437eb87b279a84b2a8e8~mv2.png",
-      "sito": "https://www.camillaprini.com"
-    },
-    {
       "galleria": "Art Gallery Finestreria",
       "id": "finestreria",
       "titolo": "Giorgia Oldano",
@@ -122,6 +123,16 @@
       "al": "2026-11-24",
       "logo": "https://artgalleryfinestreria.net/media/logo-finestreria.png",
       "sito": "https://artgalleryfinestreria.net"
+    },
+    {
+      "galleria": "Camilla Prini Gallery",
+      "id": "camillaprini",
+      "titolo": "DI NOTTE, ANCORA — Arte in Salotto Brera",
+      "link": "https://www.camillaprini.com/mostre/di-notte-ancora",
+      "dal": "2026-11-04",
+      "al": "2027-01-15",
+      "logo": "https://static.wixstatic.com/media/c818b9_cdeebe9cffbd437eb87b279a84b2a8e8~mv2.png",
+      "sito": "https://www.camillaprini.com"
     },
     {
       "galleria": "ICA Milano",
@@ -410,11 +421,11 @@
     {
       "galleria": "Cardi Gallery",
       "esito": "ok",
-      "mostre": 0,
+      "mostre": 1,
       "logo": "https://cardigallery.com/wp-content/uploads/favicon.png (icona del sito)",
       "note": [
         "link trovati: 180",
-        "schede lette: 0, mostre in corso: 0"
+        "schede lette: 1, mostre in corso: 1"
       ]
     },
     {
@@ -570,11 +581,12 @@
     },
     {
       "galleria": "Fondazione Sozzani",
-      "esito": "errore",
+      "esito": "ok",
       "mostre": 0,
-      "logo": "non trovato",
+      "logo": "https://fondazionesozzani.org/wp-content/uploads/2021/10/logospesso.png",
       "note": [
-        "fetch failed"
+        "link trovati: 1",
+        "schede lette: 1, mostre in corso: 0"
       ]
     },
     {
@@ -620,12 +632,12 @@
     },
     {
       "galleria": "Galleria Gracis",
-      "esito": "ok",
+      "esito": "errore",
       "mostre": 1,
       "logo": "https://www.galleriagracis.com/wp-content/uploads/2019/04/gracis_logo.png",
       "note": [
-        "link trovati: 29",
-        "schede lette: 4, mostre in corso: 1"
+        "HTTP 502",
+        "tenute 1 mostre dall'aggiornamento precedente"
       ]
     },
     {
@@ -870,11 +882,12 @@
     },
     {
       "galleria": "Ribot",
-      "esito": "errore",
+      "esito": "ok",
       "mostre": 0,
-      "logo": "non trovato",
+      "logo": "https://www.ribotgallery.com/wp-content/uploads/2022/03/cropped-cropped-Ribot_logo-pos-neg-2-2-1.png",
       "note": [
-        "fetch failed"
+        "link trovati: 49",
+        "schede lette: 2, mostre in corso: 0"
       ]
     },
     {
@@ -893,7 +906,7 @@
       "mostre": 0,
       "logo": "SVG dalla pagina",
       "note": [
-        "link trovati: 8",
+        "link trovati: 7",
         "schede lette: 0, mostre in corso: 0"
       ]
     },

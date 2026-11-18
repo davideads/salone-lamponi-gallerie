@@ -1,6 +1,6 @@
 {
-  "aggiornato": "2026-11-17T06:23:10.349Z",
-  "totale": 32,
+  "aggiornato": "2026-11-18T06:25:03.328Z",
+  "totale": 33,
   "mostre": [
     {
       "galleria": "Galleria Gracis",
@@ -266,6 +266,17 @@
       "sito": "https://www.depart.it"
     },
     {
+      "galleria": "Christian Stein",
+      "id": "christianstein",
+      "titolo": "JANNIS KOUNELLIS RICHARD LONG MARIO MERZ",
+      "link": "https://www.galleriachristianstein.it/kounellis-long-merz-2026",
+      "dal": null,
+      "al": null,
+      "logo": "https://static.wixstatic.com/media/6c3429_1bb7b107e62e4589ab02d69c2a1f6082%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/6c3429_1bb7b107e62e4589ab02d69c2a1f6082%7Emv2.png",
+      "logoIcona": true,
+      "sito": "https://www.galleriachristianstein.it"
+    },
+    {
       "galleria": "ICA Milano",
       "id": "icamilano",
       "titolo": "Leonardo Devito. L'Addio",
@@ -451,11 +462,11 @@
     {
       "galleria": "Christian Stein",
       "esito": "ok",
-      "mostre": 0,
+      "mostre": 1,
       "logo": "https://static.wixstatic.com/media/6c3429_1bb7b107e62e4589ab02d69c2a1f6082%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/6c3429_1bb7b107e62e4589ab02d69c2a1f6082%7Emv2.png (icona del sito)",
       "note": [
         "link trovati: 1",
-        "schede lette: 0, mostre in corso: 0"
+        "schede lette: 1, mostre in corso: 1"
       ]
     },
     {
@@ -581,12 +592,11 @@
     },
     {
       "galleria": "Fondazione Sozzani",
-      "esito": "ok",
+      "esito": "errore",
       "mostre": 0,
-      "logo": "https://fondazionesozzani.org/wp-content/uploads/2021/10/logospesso.png",
+      "logo": "non trovato",
       "note": [
-        "link trovati: 1",
-        "schede lette: 1, mostre in corso: 0"
+        "This operation was aborted"
       ]
     },
     {
@@ -632,12 +642,12 @@
     },
     {
       "galleria": "Galleria Gracis",
-      "esito": "errore",
+      "esito": "ok",
       "mostre": 1,
       "logo": "https://www.galleriagracis.com/wp-content/uploads/2019/04/gracis_logo.png",
       "note": [
-        "HTTP 502",
-        "tenute 1 mostre dall'aggiornamento precedente"
+        "link trovati: 29",
+        "schede lette: 4, mostre in corso: 1"
       ]
     },
     {
@@ -882,12 +892,11 @@
     },
     {
       "galleria": "Ribot",
-      "esito": "ok",
+      "esito": "errore",
       "mostre": 0,
-      "logo": "https://www.ribotgallery.com/wp-content/uploads/2022/03/cropped-cropped-Ribot_logo-pos-neg-2-2-1.png",
+      "logo": "non trovato",
       "note": [
-        "link trovati: 49",
-        "schede lette: 2, mostre in corso: 0"
+        "fetch failed"
       ]
     },
     {

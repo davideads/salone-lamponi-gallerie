@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-11-20T06:24:48.847Z",
+  "aggiornato": "2026-11-21T06:16:24.966Z",
   "totale": 34,
   "mostre": [
     {
@@ -135,16 +135,6 @@
       "manuale": true
     },
     {
-      "galleria": "Marcorossi artecontemporanea",
-      "id": "marcorossi",
-      "titolo": "Ivan Theimer — Terrecotte",
-      "link": "https://www.marcorossiartecontemporanea.com/ivan-theimer-terrecotte/",
-      "dal": "2026-11-04",
-      "al": "2027-01-22",
-      "logo": "https://www.marcorossiartecontemporanea.com/wp-content/uploads/2021/03/Raggruppa-501-e1615807468179.png",
-      "sito": "https://www.marcorossiartecontemporanea.com"
-    },
-    {
       "galleria": "Art Gallery Finestreria",
       "id": "finestreria",
       "titolo": "Giorgia Oldano",
@@ -163,6 +153,16 @@
       "al": "2027-01-15",
       "logo": "https://static.wixstatic.com/media/c818b9_cdeebe9cffbd437eb87b279a84b2a8e8~mv2.png",
       "sito": "https://www.camillaprini.com"
+    },
+    {
+      "galleria": "Marcorossi artecontemporanea",
+      "id": "marcorossi",
+      "titolo": "Ivan Theimer — Terrecotte",
+      "link": "https://www.marcorossiartecontemporanea.com/ivan-theimer-terrecotte/",
+      "dal": "2026-11-04",
+      "al": "2027-01-22",
+      "logo": "https://www.marcorossiartecontemporanea.com/wp-content/uploads/2021/03/Raggruppa-501-e1615807468179.png",
+      "sito": "https://www.marcorossiartecontemporanea.com"
     },
     {
       "galleria": "ICA Milano",
@@ -268,7 +268,7 @@
     {
       "galleria": "Christian Stein",
       "id": "christianstein",
-      "titolo": "JANNIS KOUNELLIS RICHARD LONG MARIO MERZ",
+      "titolo": "JANNIS KOUNELLIS — RICHARD — LONG — MARIO — MERZ",
       "link": "https://www.galleriachristianstein.it/kounellis-long-merz-2026",
       "dal": null,
       "al": null,
@@ -360,12 +360,13 @@
     },
     {
       "galleria": "A arte Invernizzi",
-      "esito": "ok",
+      "esito": "errore",
       "mostre": 0,
       "logo": "https://www.aarteinvernizzi.it/public/aarte/assets/images/logo.png",
       "note": [
-        "link trovati: 1",
-        "schede lette: 0, mostre in corso: 0"
+        "link trovati: 0",
+        "schede lette: 0, mostre in corso: 0",
+        "nessun link trovato nella pagina elenco"
       ]
     },
     {
@@ -602,12 +603,11 @@
     },
     {
       "galleria": "Fondazione Sozzani",
-      "esito": "ok",
+      "esito": "errore",
       "mostre": 0,
-      "logo": "https://fondazionesozzani.org/wp-content/uploads/2021/10/logospesso.png",
+      "logo": "non trovato",
       "note": [
-        "link trovati: 1",
-        "schede lette: 1, mostre in corso: 0"
+        "fetch failed"
       ]
     },
     {
@@ -782,12 +782,11 @@
     },
     {
       "galleria": "M77 Gallery",
-      "esito": "ok",
+      "esito": "errore",
       "mostre": 0,
-      "logo": "https://www.m77gallery.com/wp-content/uploads/2021/07/LOGO_M77_new.png",
+      "logo": "non trovato",
       "note": [
-        "link trovati: 34",
-        "schede lette: 10, mostre in corso: 0"
+        "This operation was aborted"
       ]
     },
     {
@@ -904,11 +903,12 @@
     },
     {
       "galleria": "Ribot",
-      "esito": "errore",
+      "esito": "ok",
       "mostre": 0,
-      "logo": "non trovato",
+      "logo": "https://www.ribotgallery.com/wp-content/uploads/2022/03/cropped-cropped-Ribot_logo-pos-neg-2-2-1.png",
       "note": [
-        "fetch failed"
+        "link trovati: 49",
+        "schede lette: 2, mostre in corso: 0"
       ]
     },
     {

@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-11-21T06:16:24.966Z",
+  "aggiornato": "2026-11-22T06:17:37.540Z",
   "totale": 34,
   "mostre": [
     {
@@ -135,6 +135,16 @@
       "manuale": true
     },
     {
+      "galleria": "Marcorossi artecontemporanea",
+      "id": "marcorossi",
+      "titolo": "Ivan Theimer — Terrecotte",
+      "link": "https://www.marcorossiartecontemporanea.com/ivan-theimer-terrecotte/",
+      "dal": "2026-11-04",
+      "al": "2027-01-22",
+      "logo": "https://www.marcorossiartecontemporanea.com/wp-content/uploads/2021/03/Raggruppa-501-e1615807468179.png",
+      "sito": "https://www.marcorossiartecontemporanea.com"
+    },
+    {
       "galleria": "Art Gallery Finestreria",
       "id": "finestreria",
       "titolo": "Giorgia Oldano",
@@ -153,16 +163,6 @@
       "al": "2027-01-15",
       "logo": "https://static.wixstatic.com/media/c818b9_cdeebe9cffbd437eb87b279a84b2a8e8~mv2.png",
       "sito": "https://www.camillaprini.com"
-    },
-    {
-      "galleria": "Marcorossi artecontemporanea",
-      "id": "marcorossi",
-      "titolo": "Ivan Theimer — Terrecotte",
-      "link": "https://www.marcorossiartecontemporanea.com/ivan-theimer-terrecotte/",
-      "dal": "2026-11-04",
-      "al": "2027-01-22",
-      "logo": "https://www.marcorossiartecontemporanea.com/wp-content/uploads/2021/03/Raggruppa-501-e1615807468179.png",
-      "sito": "https://www.marcorossiartecontemporanea.com"
     },
     {
       "galleria": "ICA Milano",
@@ -584,12 +584,11 @@
     },
     {
       "galleria": "Fondazione Nicola Trussardi",
-      "esito": "ok",
+      "esito": "errore",
       "mostre": 0,
-      "logo": "https://www.fondazionenicolatrussardi.com/wp-content/themes/adios-child/img/logo_fondazione.png",
+      "logo": "non trovato",
       "note": [
-        "link trovati: 35",
-        "schede lette: 4, mostre in corso: 0"
+        "pagina di verifica anti-robot"
       ]
     },
     {
@@ -603,11 +602,12 @@
     },
     {
       "galleria": "Fondazione Sozzani",
-      "esito": "errore",
+      "esito": "ok",
       "mostre": 0,
-      "logo": "non trovato",
+      "logo": "https://fondazionesozzani.org/wp-content/uploads/2021/10/logospesso.png",
       "note": [
-        "fetch failed"
+        "link trovati: 1",
+        "schede lette: 1, mostre in corso: 0"
       ]
     },
     {
@@ -782,11 +782,12 @@
     },
     {
       "galleria": "M77 Gallery",
-      "esito": "errore",
+      "esito": "ok",
       "mostre": 0,
-      "logo": "non trovato",
+      "logo": "https://www.m77gallery.com/wp-content/uploads/2021/07/LOGO_M77_new.png",
       "note": [
-        "This operation was aborted"
+        "link trovati: 34",
+        "schede lette: 10, mostre in corso: 0"
       ]
     },
     {

@@ -1,6 +1,6 @@
 {
-  "aggiornato": "2026-11-22T06:17:37.540Z",
-  "totale": 34,
+  "aggiornato": "2026-11-23T06:31:49.902Z",
+  "totale": 35,
   "mostre": [
     {
       "galleria": "Galleria Gracis",
@@ -11,6 +11,16 @@
       "al": "2026-12-23",
       "logo": "https://www.galleriagracis.com/wp-content/uploads/2019/04/gracis_logo.png",
       "sito": "https://www.galleriagracis.com"
+    },
+    {
+      "galleria": "M77 Gallery",
+      "id": "m77",
+      "titolo": "Titina Maselli. Frammenti di realtà",
+      "link": "https://www.m77gallery.com/exhibitions/titina-maselli-frammenti-di-realta/",
+      "dal": "2026-11-23",
+      "al": "2027-03-06",
+      "logo": "https://www.m77gallery.com/wp-content/uploads/2021/07/LOGO_M77_new.png",
+      "sito": "https://www.m77gallery.com"
     },
     {
       "galleria": "Fondazione Elpis",
@@ -584,11 +594,12 @@
     },
     {
       "galleria": "Fondazione Nicola Trussardi",
-      "esito": "errore",
+      "esito": "ok",
       "mostre": 0,
-      "logo": "non trovato",
+      "logo": "https://www.fondazionenicolatrussardi.com/wp-content/themes/adios-child/img/logo_fondazione.png",
       "note": [
-        "pagina di verifica anti-robot"
+        "link trovati: 35",
+        "schede lette: 4, mostre in corso: 0"
       ]
     },
     {
@@ -783,11 +794,11 @@
     {
       "galleria": "M77 Gallery",
       "esito": "ok",
-      "mostre": 0,
+      "mostre": 1,
       "logo": "https://www.m77gallery.com/wp-content/uploads/2021/07/LOGO_M77_new.png",
       "note": [
         "link trovati: 34",
-        "schede lette: 10, mostre in corso: 0"
+        "schede lette: 10, mostre in corso: 1"
       ]
     },
     {

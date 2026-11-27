@@ -1,6 +1,6 @@
 {
-  "aggiornato": "2026-11-26T06:20:10.755Z",
-  "totale": 41,
+  "aggiornato": "2026-11-27T06:24:08.653Z",
+  "totale": 42,
   "mostre": [
     {
       "galleria": "Galleria Gracis",
@@ -11,6 +11,16 @@
       "al": "2026-12-23",
       "logo": "https://www.galleriagracis.com/wp-content/uploads/2019/04/gracis_logo.png",
       "sito": "https://www.galleriagracis.com"
+    },
+    {
+      "galleria": "Glenda Cinquegrana Art Consulting",
+      "id": "glendacinquegrana",
+      "titolo": "UPCOMING: MARIO DE BIASI, STARDUST",
+      "link": "https://www.glendacinquegrana.com/2026/11/upcoming-mario-de-biasi-stardust/",
+      "dal": "2026-11-27",
+      "al": "2027-01-16",
+      "logo": "https://www.glendacinquegrana.com/wp-content/uploads/2019/10/logo_glendacinquegrana_2019_trimmed_transparent_180px.png",
+      "sito": "https://www.glendacinquegrana.com"
     },
     {
       "galleria": "Lia Rumma",
@@ -273,7 +283,6 @@
       "dal": "2026-10-01",
       "al": null,
       "logo": "https://galleriazero.it/wp-content/uploads/2020/12/cropped-zerofavicon_Tavola-disegno-1-192x192.png",
-      "logoIcona": true,
       "sito": "https://galleriazero.it"
     },
     {
@@ -432,11 +441,9 @@
       "galleria": "A arte Invernizzi",
       "esito": "errore",
       "mostre": 0,
-      "logo": "https://www.aarteinvernizzi.it/public/aarte/assets/images/logo.png",
+      "logo": "non trovato",
       "note": [
-        "link trovati: 0",
-        "schede lette: 0, mostre in corso: 0",
-        "nessun link trovato nella pagina elenco"
+        "pagina di verifica anti-robot"
       ]
     },
     {
@@ -461,12 +468,12 @@
     },
     {
       "galleria": "ArtNoble Gallery",
-      "esito": "ok",
+      "esito": "errore",
       "mostre": 2,
       "logo": "https://artnoble.it/wp-content/uploads/2021/10/artnoble-text-02.svg",
       "note": [
-        "link trovati: 27",
-        "schede lette: 2, mostre in corso: 2"
+        "pagina di verifica anti-robot",
+        "tenute 2 mostre dall'aggiornamento precedente"
       ]
     },
     {
@@ -654,12 +661,11 @@
     },
     {
       "galleria": "Fondazione Nicola Trussardi",
-      "esito": "ok",
+      "esito": "errore",
       "mostre": 0,
-      "logo": "https://www.fondazionenicolatrussardi.com/wp-content/themes/adios-child/img/logo_fondazione.png",
+      "logo": "non trovato",
       "note": [
-        "link trovati: 35",
-        "schede lette: 4, mostre in corso: 0"
+        "pagina di verifica anti-robot"
       ]
     },
     {
@@ -794,11 +800,11 @@
     {
       "galleria": "Glenda Cinquegrana Art Consulting",
       "esito": "ok",
-      "mostre": 0,
+      "mostre": 1,
       "logo": "https://www.glendacinquegrana.com/wp-content/uploads/2019/10/logo_glendacinquegrana_2019_trimmed_transparent_180px.png",
       "note": [
         "link trovati: 8",
-        "schede lette: 5, mostre in corso: 0"
+        "schede lette: 5, mostre in corso: 1"
       ]
     },
     {
@@ -832,12 +838,11 @@
     },
     {
       "galleria": "Loom Gallery",
-      "esito": "ok",
+      "esito": "errore",
       "mostre": 0,
-      "logo": "https://loomgallery.com/wp-content/uploads/2025/05/loom-logo2025.svg",
+      "logo": "non trovato",
       "note": [
-        "link trovati: 32",
-        "schede lette: 0, mostre in corso: 0"
+        "pagina di verifica anti-robot"
       ]
     },
     {
@@ -852,12 +857,12 @@
     },
     {
       "galleria": "M77 Gallery",
-      "esito": "ok",
+      "esito": "errore",
       "mostre": 1,
       "logo": "https://www.m77gallery.com/wp-content/uploads/2021/07/LOGO_M77_new.png",
       "note": [
-        "link trovati: 34",
-        "schede lette: 10, mostre in corso: 1"
+        "pagina di verifica anti-robot",
+        "tenute 1 mostre dall'aggiornamento precedente"
       ]
     },
     {
@@ -882,12 +887,12 @@
     },
     {
       "galleria": "Marcorossi artecontemporanea",
-      "esito": "ok",
+      "esito": "errore",
       "mostre": 1,
       "logo": "https://www.marcorossiartecontemporanea.com/wp-content/uploads/2021/03/Raggruppa-501-e1615807468179.png",
       "note": [
-        "link trovati: 28",
-        "schede lette: 1, mostre in corso: 1"
+        "pagina di verifica anti-robot",
+        "tenute 1 mostre dall'aggiornamento precedente"
       ]
     },
     {
@@ -922,12 +927,12 @@
     },
     {
       "galleria": "Monica De Cardenas",
-      "esito": "ok",
+      "esito": "errore",
       "mostre": 1,
       "logo": "https://monicadecardenas.com/wp-content/uploads/2019/11/logo-01.svg",
       "note": [
-        "link trovati: 12",
-        "schede lette: 1, mostre in corso: 1"
+        "pagina di verifica anti-robot",
+        "tenute 1 mostre dall'aggiornamento precedente"
       ]
     },
     {
@@ -1003,12 +1008,11 @@
     },
     {
       "galleria": "Tommaso Calabro",
-      "esito": "ok",
+      "esito": "errore",
       "mostre": 0,
-      "logo": "SVG dalla pagina",
+      "logo": "non trovato",
       "note": [
-        "link trovati: 25",
-        "schede lette: 0, mostre in corso: 0"
+        "pagina di verifica anti-robot"
       ]
     },
     {
@@ -1023,12 +1027,12 @@
     },
     {
       "galleria": "ZERO…",
-      "esito": "ok",
+      "esito": "errore",
       "mostre": 1,
-      "logo": "https://galleriazero.it/wp-content/uploads/2020/12/cropped-zerofavicon_Tavola-disegno-1-192x192.png (icona del sito)",
+      "logo": "https://galleriazero.it/wp-content/uploads/2020/12/cropped-zerofavicon_Tavola-disegno-1-192x192.png",
       "note": [
-        "link trovati: 52",
-        "schede lette: 1, mostre in corso: 1"
+        "pagina di verifica anti-robot",
+        "tenute 1 mostre dall'aggiornamento precedente"
       ]
     }
   ]
